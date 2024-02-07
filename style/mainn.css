@@ -69,6 +69,15 @@
     gap: 20px;
 }
 
+.title-courses {
+    position: relative;
+}
+
+.svg-courses {
+    position: absolute;
+    left: 0;
+}
+
 .sec-courses {
     display: flex;
     flex-direction: row;
