@@ -1,6 +1,6 @@
 
 
-header{
+header {
     width: 100%;
     display: flex;
     justify-content: center;
@@ -9,7 +9,7 @@ header{
     top: 0;
 }
 
-.inner-header{
+.inner-header {
     height: 60px;
     display: flex;
     gap: 20px;
@@ -21,29 +21,29 @@ header{
     max-width: var(--max);
 }
 
-#banner{
+#banner {
     background: #202020;
 }
 
-.head-2{
+.head-2 {
     display: flex;
     gap: 20px;
     align-items: center;
 }
 
-.bt-head{
+.bt-head {
     color: white;
     font-size: 16px;
     padding: 5px
 }
 
-.login{
+.login {
     padding: 8px 25px;
     border-radius: 2px;
     background: #F24C4C;
 }
 
-#banner{
+#banner {
     width: calc(100% - 20px);
     padding: 10px;
     min-height: 450px;
@@ -52,7 +52,7 @@ header{
     align-items: center;
 }
 
-.inner-banner{
+.inner-banner {
     width: calc(100% - 20px);
     padding: 10px;
     max-width: var(--max);
@@ -61,33 +61,33 @@ header{
     align-items: center;
 }
 
-.banner-left, .banner-right{
+.banner-left, .banner-right {
     width: 50%;
 }
 
-.banner-left{
+.banner-left {
     display: flex;
     flex-direction: column;
     gap: 20px;
     max-width: 400px;
 }
 
-.banner-right{
+.banner-right {
     display: flex;
     justify-content: flex-end;
 }
 
-.banner-title{
+.banner-title {
     font-size: 28px;
     font-weight: bolder;
     color: white;
 }
 
-.banner-text{
+.banner-text {
     color: #CBCBCB;
 }
 
-.banner-now{
+.banner-now {
     padding: 10px 30px;
     border-radius: 2px;
     width: fit-content;
@@ -95,20 +95,26 @@ header{
     color: white;
 }
 
-#courses{
+#courses {
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
 
-.courses{
+.courses {
+    display: flex;
+    flex-direction: column;
+    gap: 20px
+}
+
+.sec-courses {
     display: flex;
     flex-direction: row;
     gap: 20px;
     max-width: var(--max);
 }
 
-.item{
+.item {
     display: flex;
     flex-direction: column;
     gap: 10px;
