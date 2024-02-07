@@ -119,7 +119,10 @@
     text-overflow: ellipsis;
     font-weight: 600;
     overflow: hidden;
-    white-space: nowrap;
+    /* white-space: nowrap; */
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
 }
 
 .item-users {
