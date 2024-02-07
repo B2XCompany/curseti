@@ -130,20 +130,24 @@
     -webkit-box-orient: vertical;
 }
 
-
-
 .item-users {
-
+    color: #333;
+    font-size: 0.9rem;
 }
 
 .item-price {
-
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
 }
 
 .old-price {
-
+    color: #555;
+    text-decoration: dashed;
+    font-size: 0.9rem;
 }
 
 .actual-price {
-
+    color: #F24C4C;
+    font-size: 1.1rem;
 }
