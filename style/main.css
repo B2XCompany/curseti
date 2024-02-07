@@ -47,7 +47,12 @@
     border-radius: 2px;
     width: fit-content;
     background: #F24C4C;
-    color: white;
+    color: #eeeeee90;
+}
+
+.banner-now:hover {
+    color: #eee;
+    box-shadow: 0 0 8px 0 #F24C4C;
 }
 
 #courses {
