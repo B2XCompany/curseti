@@ -67,7 +67,7 @@
             <div class="sec-courses">
                 <div class="item">
                     <div class="item-img">
-                        <img href="#"></img>
+                        <img href="./imgs/test.jpg"></img>
                     </div>
                     <div class="item-info">
                         <p class="item-title">Curso de programação</p>
@@ -78,7 +78,7 @@
                 </div>
                 <div class="item">
                     <div class="item-img">
-                        <img href="#"></img>
+                        <img href="./imgs/test.jpg"></img>
                     </div>
                     <div class="item-info">
                         <p class="item-title">Curso de programação</p>
@@ -89,7 +89,7 @@
                 </div>
                 <div class="item">
                     <div class="item-img">
-                        <img href="#"></img>
+                        <img href="./imgs/test.jpg"></img>
                     </div>
                     <div class="item-info">
                         <p class="item-title">Curso de programação</p>
@@ -100,7 +100,7 @@
                 </div>
                 <div class="item">
                     <div class="item-img">
-                        <img href="#"></img>
+                        <img href="./imgs/test.jpg"></img>
                     </div>
                     <div class="item-info">
                         <p class="item-title">Curso de programação</p>
