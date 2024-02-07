@@ -26,6 +26,7 @@
             max-width: var(--max);
         }
         body{
+            background: #202020;
         }
         .sep-2{
             display: flex;
@@ -39,7 +40,7 @@
         }
         .login{
             padding: 8px 25px;
-            border-radius: 5px;
+            border-radius: 2px;
             background: #F24C4C;
         }
     </style>
