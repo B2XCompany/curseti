@@ -58,12 +58,14 @@
         #banner{
             width: calc(100% - 20px);
             padding: 10px;
-            min-height: 500px;
+            min-height: 450px;
             display: flex;
             justify-content: center;
             align-items: center;
         }
         .inner-banner{
+            width: calc(100% - 20px);
+            padding: 10px;
             max-width: var(--max);
             display: flex;
             justify-content: space-between;
@@ -76,6 +78,7 @@
             display: flex;
             flex-direction: column;
             gap: 20px;
+            max-width: 400px;
         }
         .banner-title{
             font-size: 28px;
@@ -127,7 +130,15 @@
             </div>
             <div class="sec-courses">
                 <div class="item">
-                
+                    <div class="item-img">
+                        <img href="#"></img>
+                    </div>
+                    <div class="item-info">
+                        <p class="item-title">Curso de programação</p>
+                        <p class="item-users">300 alunos</p>
+                        <p class="item-price">300 reais</p>
+                        <p class="item-rate">5 stars</p>
+                    </div>
                 </div>
             </div>
         </div>
