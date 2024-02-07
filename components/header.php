@@ -1,6 +1,6 @@
 <?php
 // include"../sys/conexao.php";
-$user = "a";
+// $user = "a";
 
 
 if($user){
