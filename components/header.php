@@ -29,8 +29,8 @@ echo "
         </div>
     </header>
     <script>
+        let token = '$token';
         function getLogin(){
-            let token = '$token';
             fetch(`./components/login.php?token=\${token}`)
             .then(e=>e.json())
             .then(e=>{
