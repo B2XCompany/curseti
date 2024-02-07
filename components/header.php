@@ -15,7 +15,7 @@ echo "
     <header>
         <div class='inner-header'>
             <div class='head-1'>
-                <a href='#'><img src='https://img-c.udemycdn.com/course/750x422/1465244_ed1a_3.jpg'></a>
+                <a href='#'><img src='./imgs/logo.png'></a>
             </div>
             <div class='head-2'>
                 <a href='#' class='bt-head'>Principal</a>

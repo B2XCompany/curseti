@@ -54,7 +54,7 @@
             <div class="sec-courses">
                 <div class="item">
                     <div class="item-img">
-                        <img src="">
+                        <img src="https://img-c.udemycdn.com/course/750x422/1465244_ed1a_3.jpg">
                     </div>
                     <div class="item-info">
                         <p class="item-title">Curso de programação</p>
