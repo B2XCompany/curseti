@@ -19,6 +19,22 @@
                 <a class='banner-now' href='#'>Começar agora</a>
             </div>
             <div class='banner-right'>
+                <div class="banner-right-top">
+                    <div>
+                        <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M1.9165 5.75C1.9165 4.16219 3.20369 2.875 4.7915 2.875H18.2082C19.796 2.875 21.0832 4.16219 21.0832 5.75V14.375C21.0832 15.9629 19.796 17.25 18.2082 17.25H12.4582V18.2083H14.3748C14.9041 18.2083 15.3332 18.6374 15.3332 19.1667C15.3332 19.696 14.9041 20.125 14.3748 20.125H8.62484C8.09557 20.125 7.6665 19.696 7.6665 19.1667C7.6665 18.6374 8.09557 18.2083 8.62484 18.2083H10.5415V17.25H4.7915C3.20369 17.25 1.9165 15.9629 1.9165 14.375V5.75ZM4.7915 4.79167C4.26224 4.79167 3.83317 5.22073 3.83317 5.75V14.375C3.83317 14.9043 4.26224 15.3333 4.7915 15.3333H18.2082C18.7375 15.3333 19.1665 14.9043 19.1665 14.375V5.75C19.1665 5.22073 18.7375 4.79167 18.2082 4.79167H4.7915Z" fill="#B5B5B5"/>
+                        </svg>
+                    </div>
+                    <p>15 cursos gratuitos disponíveis</p>
+                </div>
+                <div class="banner-right-bot">
+                    <p>Cursos de desenvolvimento</p>
+                    <p>Cursos de SQL e NoSQL</p>
+                    <p>Cursos de lógica</p>
+                    <p>Cursos de IA e ML</p>
+                    <p>Cursos de Gestão de TI</p>
+                </div>
+
                 
                 <svg width="277" height="202" viewBox="0 0 277 202" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M0 2C0 0.895431 0.895431 0 2 0H275C276.105 0 277 0.895431 277 2V41C277 42.1046 276.105 43 275 43H2C0.895428 43 0 42.1046 0 41V2Z" fill="url(#paint0_radial_461_16)"/>

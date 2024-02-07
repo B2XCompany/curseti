@@ -41,7 +41,7 @@
 }
 
 .banner-text {
-    color: #CBCBCB;
+    color: var(--cinzinha);
 }
 
 .banner-now {
@@ -55,6 +55,36 @@
 
 .banner-now:hover {
     box-shadow: 0 0 8px 0 var(--contraste);
+}
+
+.banner-right {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: var(--cinzinha);
+}
+
+.banner-right-top {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    padding: 5px;
+}
+
+.banner-right-top p:before {
+    content: "+";
+    color: var(--contraste);
+}
+
+.banner-right-bot {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.banner-right-bot p:before {
+    content: '-';
+    color: var(--contraste);
 }
 
 #courses {

@@ -7,7 +7,7 @@ if($user){
     $text = $user;
 } else {
     $text = "
-    <a href='./dashboard.php' class='bt-head login'>Entrar</a>
+        <button onclick='getLogin()' class='bt-head login'>Entrar</button>
     ";
 }
 
@@ -25,4 +25,7 @@ echo "
             </div>
         </div>
     </header>
+    <script>
+
+        
 ";
