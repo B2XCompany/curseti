@@ -61,6 +61,8 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
+            max-width: var(--max);
+            margin: auto
         }
         .banner-left, .banner-right{
             width: 50%;
@@ -73,6 +75,7 @@
         .banner-title{
             font-size: 28px;
             font-weight: bolder;
+            clor: white;
         }
         .banner-text{
             color: #CBCBCB;
@@ -80,6 +83,9 @@
         .banner-now{
             padding: 10px 30px;
             border-radius: 2px;
+            width: fit-content;
+            background: #F24C4C;
+            color: white;
         }
     </style>
 </head>
@@ -111,28 +117,27 @@
         <div id="principalCourses">
             <div class="title-courses">
                 <p>Principais cursos</p>
-                <img src="#"></img>
             </div>
             <div class="sec-courses"></div>
         </div>
         <div id="moreCourses">
             <div class="title-courses">
                 <p>Mais cursos</p>
-                
-                <svg width="71" height="68" viewBox="0 0 71 68" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M46.261 1.22491L45.142 1.02558C41.3453 0.349256 37.4494 0.470086 33.7019 1.38039L13.2863 6.33949C-0.20083 9.61561 -4.31933 26.7812 6.21305 35.8203C9.98401 39.0566 12.1538 43.7781 12.1538 48.7474V49.3522C12.1538 63.8782 28.2297 72.6458 40.4418 64.7802L56.8851 54.1893C79.0564 39.9091 72.2244 5.84983 46.261 1.22491Z" fill="url(#paint0_linear_461_3)"/>
-                <defs>
-                <linearGradient id="paint0_linear_461_3" x1="89" y1="9.53221" x2="24.8751" y2="67.8775" gradientUnits="userSpaceOnUse">
-                <stop stop-color="#F24C4C" stop-opacity="0.26"/>
-                <stop offset="1" stop-color="#F24C4C" stop-opacity="0"/>
-                </linearGradient>
-                </defs>
-                </svg>
-
             </div>
             <div class="sec-courses"></div>
         </div>
     </section>
     
+    <script>
+        .fetch("components/svg.html")
+        .then(e=>e.text())
+        .then(e=>{
+            let titles = document.querySelectorAll(".title-courses");
+
+            for(i of titles){
+                i.innerHTML += e
+            }
+        })
+    </script>
 </body>
 </html>
