@@ -32,15 +32,23 @@ header {
 }
 
 .bt-head {
-    color: white;
+    color: #eeeeee90;
     font-size: 16px;
     padding: 5px
+}
+
+.bt-head:hover {
+    color: #eee;
 }
 
 .login {
     padding: 8px 25px;
     border-radius: 2px;
     background: #F24C4C;
+}
+
+.login:hover {
+    box-shadow: 0 0 8px 0 #F24C4C;
 }
 
 #banner {
