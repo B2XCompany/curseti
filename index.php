@@ -76,7 +76,7 @@
                             <p class="old-price">400,00</p>
                             <p class="actual-price">300,00</p>
                         </div>
-                        <p class="item-rate">5 stars</p>
+                        <div class="item-rate"></div>
                     </div>
                 </div>
                 <div class="item">
@@ -89,7 +89,7 @@
                         <div class="item-price">
                             <p class="actual-price">300,00</p>
                         </div>
-                        <p class="item-rate">5 stars</p>
+                        <div class="item-rate"></div>
                     </div>
                 </div>
                 <div class="item">
@@ -102,7 +102,7 @@
                         <div class="item-price">
                             <p class="actual-price">300,00</p>
                         </div>
-                        <p class="item-rate">5 stars</p>
+                        <div class="item-rate"></div>
                     </div>
                 </div>
                 <div class="item">
@@ -115,7 +115,7 @@
                         <div class="item-price">
                             <p class="actual-price">300,00</p>
                         </div>
-                        <p class="item-rate"></p>
+                        <div class="item-rate"></div>
                     </div>
                 </div>
             </div>
