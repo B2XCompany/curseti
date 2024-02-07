@@ -29,7 +29,7 @@
             <div class='banner-left'>
                 <h1 class='banner-title'>Cursos gratuitos com certificado online</h1>
                 <p class='banner-text'>Expanda seu conhecimento com todos os cursos com certificados que disponibilizamos</p>
-                <a class='banner-now' href='#'>Começar agora</a>
+                <a class='banner-now' href='#'>Começar Teste agora</a>
             </div>
             <div class='banner-right'>
                 
