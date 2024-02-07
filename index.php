@@ -12,7 +12,7 @@
             font-family: sans-serif;
             text-decoration: none;
 
-            --max: 1280px;
+            --max: 1000px;
         }
         header{
             height: 60px;
@@ -26,8 +26,6 @@
             max-width: var(--max);
         }
         body{
-            background: #202020;
-            height: 400px;
         }
         .sep-2{
             display: flex;
@@ -36,7 +34,7 @@
         }
         .bt{
             color: white;
-            font-size: 18px;
+            font-size: 16px;
             padding: 5px
         }
         .login{
@@ -52,9 +50,9 @@
             <a href="#"><img src='./logo.png'></a>
         </div>
         <div class='sep-2'>
-            <a href="#" class='bt'>Link</a>
-            <a href="#" class='bt'>Link</a>
-            <a href="#" class='bt'>Link</a>
+            <a href="#" class='bt'>Principal</a>
+            <a href="#" class='bt'>Cursos</a>
+            <a href="#" class='bt'>Certificações</a>
             <a href="#" class='bt login'>Entrar</a>
         </div>
     </header>
