@@ -131,7 +131,7 @@
 }
 
 .item-users {
-    color: #333;
+    color: #888;
     font-size: 0.9rem;
 }
 
@@ -144,7 +144,7 @@
 }
 
 .old-price {
-    color: #555;
+    color: #777;
     text-decoration: line-through;
     font-size: 0.9rem;
     width: auto;
