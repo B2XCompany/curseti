@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style/main.css">
-    <link rel="stylesheet" href="style/root.css">
-    <link rel="stylesheet" href="style/header.css">
+    <link rel="stylesheet" href="style/mainn.css">
+    <link rel="stylesheet" href="style/roott.css">
+    <link rel="stylesheet" href="style/headerr.css">
     <link rel="shortcut icon" href="./imgs/icon.png" type="image/x-icon">
     <title>CurseTI - Cursos online gratuitos com certificado</title>
 </head>
@@ -83,7 +83,7 @@
                     <div class="item-info">
                         <p class="item-title">Curso de programação</p>
                         <p class="item-users">300 alunos</p>
-                        <p class="item-price">300 reais</p>
+                        <p class="item-price"><p class="old-price"></p><p class="actual-price">U$ 300,00</p></p>
                         <p class="item-rate">5 stars</p>
                     </div>
                 </div>
