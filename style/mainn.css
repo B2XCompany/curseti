@@ -149,14 +149,14 @@
 }
 
 .old-price {
-    color: #777;
+    color: #F24C4C80;
     text-decoration: line-through;
     font-size: 0.9rem;
     width: auto;
 }
 
 .actual-price {
-    color: #F24C4C;
+    color: #36a355;
     font-size: 1.1rem;
     width: auto;
 }
