@@ -25,7 +25,5 @@ echo "
             </div>
         </div>
     </header>
-    <script>
-
-        
+    
 ";
