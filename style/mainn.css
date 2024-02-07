@@ -71,6 +71,7 @@
     justify-content: center;
     align-items: start;
     gap: 40px;
+    flex-wrap: wrap;
     width: calc(100% - 40px);
     max-width: var(--max);
     margin-top: 40px;
