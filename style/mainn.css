@@ -77,6 +77,11 @@
 .title-courses {
     position: relative;
     width: 100%;
+    font-size: 1.3rem;
+}
+
+.title-courses p {
+    margin-left: 10px;
 }
 
 .svg-courses {
