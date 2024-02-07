@@ -34,9 +34,10 @@ echo "
             fetch(`./components/login.php?token=\${token}`)
             .then(e=>e.json())
             .then(e=>{
+                console.log('Velha '+token)
                 document.body.innerHTML += e.element;
                 token = e.newToken;
-                console.log(token)
+                console.log('Nova '+token)
             })
         }
 
