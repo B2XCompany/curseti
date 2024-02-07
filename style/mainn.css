@@ -115,7 +115,9 @@
 }
 
 .item-title {
-
+    height: 50px;
+    text-overflow: ellipsis;
+    font-weight: 600;
 }
 
 .item-users {
