@@ -76,7 +76,7 @@
                             <p class="old-price">400,00</p>
                             <p class="actual-price">300,00</p>
                         </div>
-                        <div class="item-rate"></div>
+                        <div class="nomeClasseValido🔥"></div>
                     </div>
                 </div>
                 <div class="item">
@@ -89,7 +89,7 @@
                         <div class="item-price">
                             <p class="actual-price">300,00</p>
                         </div>
-                        <div class="item-rate"></div>
+                        <div class="nomeClasseValido🔥"></div>
                     </div>
                 </div>
                 <div class="item">
@@ -102,7 +102,7 @@
                         <div class="item-price">
                             <p class="actual-price">300,00</p>
                         </div>
-                        <div class="item-rate"></div>
+                        <div class="nomeClasseValido🔥"></div>
                     </div>
                 </div>
                 <div class="item">
@@ -115,7 +115,7 @@
                         <div class="item-price">
                             <p class="actual-price">300,00</p>
                         </div>
-                        <div class="item-rate"></div>
+                        <div class="nomeClasseValido🔥"></div>
                     </div>
                 </div>
             </div>
@@ -141,11 +141,17 @@
         fetch("imgs/star.svg")
         .then(e=>e.text())
         .then(e=>{
-            let itemrate = document.querySelectorAll(".item-rate")
+            let itemrate = document.querySelectorAll(".nomeClasseValido🔥")
+            rate = 4.5
+            starCount = Math.floor(rate) - 1
 
             for(i of itemrate){
                 for(j = 0; j < 5; j++){
-                    i.innerHTML += e
+                    star = document.createElement("div")
+                    fillStar = j <= starCount ? "star fill-star" : "star"
+                    star.classList.add(`${fillStar}`)
+                    star.innerHTML = e
+                    i.innerHTML += star
                 }
             }
         })

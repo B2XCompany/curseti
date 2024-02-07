@@ -160,3 +160,13 @@
     font-size: 1.1rem;
     width: auto;
 }
+
+.item-rate {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+
+.fill-star {
+    fill: yellow;
+}
