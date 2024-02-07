@@ -87,7 +87,6 @@
                         <p class="item-title">Curso de programação e sei la o que, machine learning e tals, sabe como é né? Texto comprido e meu deus do ceu lorem ipsum dolor</p>
                         <p class="item-users">300 alunos</p>
                         <div class="item-price">
-                            
                             <p class="actual-price">300,00</p>
                         </div>
                         <p class="item-rate">5 stars</p>
@@ -101,7 +100,6 @@
                         <p class="item-title">Curso de programação</p>
                         <p class="item-users">300 alunos</p>
                         <div class="item-price">
-                            
                             <p class="actual-price">300,00</p>
                         </div>
                         <p class="item-rate">5 stars</p>
@@ -115,10 +113,9 @@
                         <p class="item-title">Curso de programação</p>
                         <p class="item-users">300 alunos</p>
                         <div class="item-price">
-                            
                             <p class="actual-price">300,00</p>
                         </div>
-                        <p class="item-rate">5 stars</p>
+                        <p class="item-rate"></p>
                     </div>
                 </div>
             </div>
@@ -132,13 +129,24 @@
     </section>
     
     <script>
-        fetch("components/svg.html")
+        fetch("imgs/svg.html")
         .then(e=>e.text())
         .then(e=>{
             let titles = document.querySelectorAll(".title-courses")
 
             for(i of titles){
                 i.innerHTML += e
+            }
+        })
+        fetch("imgs/star.html")
+        .then(e=>e.text())
+        .then(e=>{
+            let itemrate = document.querySelectorAll(".item-rate")
+
+            for(i of itemrate){
+                for(j in 5){
+                    i.innerHTML += e
+                }
             }
         })
     </script>
