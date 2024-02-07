@@ -70,10 +70,10 @@
     flex-direction: column;
     justify-content: center;
     align-items: start;
-    gap: 30px;
+    gap: 40px;
     width: calc(100% - 40px);
     max-width: var(--max);
-    margin-top: 20px;
+    margin-top: 40px;
 }
 
 .title-courses {
