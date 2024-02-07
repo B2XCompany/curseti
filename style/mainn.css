@@ -118,6 +118,8 @@
     height: 50px;
     text-overflow: ellipsis;
     font-weight: 600;
+    overflow: hidden;
+    white-space: nowrap;
 }
 
 .item-users {
