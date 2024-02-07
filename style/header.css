@@ -1,0 +1,50 @@
+header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+}
+
+.inner-header {
+    height: 60px;
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    align-items: center;
+    width: calc(100% - 40px);
+    padding:5px 20px;
+    margin: auto;
+    max-width: var(--max);
+}
+
+#banner {
+    background: #202020;
+}
+
+.head-2 {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.bt-head {
+    color: #eeeeee90;
+    font-size: 16px;
+    padding: 5px
+}
+
+.bt-head:hover {
+    color: #eee;
+}
+
+.login {
+    padding: 8px 25px;
+    border-radius: 2px;
+    background: #F24C4C;
+}
+
+.login:hover {
+    box-shadow: 0 0 8px 0 #F24C4C;
+}

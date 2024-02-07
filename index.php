@@ -5,14 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style/index.css">
     <link rel="stylesheet" href="style/root.css">
-    <link rel="shortcut icon" href="./icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="style/header.css">
+    <link rel="shortcut icon" href="./imgs/icon.png" type="image/x-icon">
     <title>CurseTI - Cursos online gratuitos com certificado</title>
 </head>
 <body>
     <header>
         <div class='inner-header'>
             <div class='head-1'>
-                <a href="#"><img src='./logo.png'></a>
+                <a href="#"><img src='./imgs/logo.png'></a>
             </div>
             <div class='head-2'>
                 <a href="#" class='bt-head'>Principal</a>
