@@ -1,4 +1,3 @@
-Hello World!!
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,6 +9,10 @@ Hello World!!
             padding: 0;
             margin: 0;
             color: white;
+            font-family: sans-serif;
+            text-decoration: none;
+
+            --max: 1280px;
         }
         header{
             height: 60px;
@@ -19,6 +22,8 @@ Hello World!!
             align-items: center;
             width: calc(100% - 40px);
             padding:5px 20px;
+            margin: auto;
+            max-width: var(--max);
         }
         body{
             background: #202020;
@@ -26,14 +31,17 @@ Hello World!!
         }
         .sep-2{
             display: flex;
-            gap: 10px;
+            gap: 20px;
+            align-items: center;
         }
         .bt{
             color: white;
-            font-size: 16px;
+            font-size: 18px;
+            padding: 5px
         }
         .login{
-            padding: 5px 15px;
+            padding: 8px 25px;
+            border-radius: 5px;
             background: #F24C4C;
         }
     </style>
