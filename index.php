@@ -54,6 +54,7 @@
             border-radius: 2px;
             background: #F24C4C;
         }
+        
         #banner{
             width: calc(100% - 20px);
             padding: 10px;
@@ -61,8 +62,12 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
+        }
+        .inner-banner{
             max-width: var(--max);
-            margin: auto
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
         }
         .banner-left, .banner-right{
             width: 50%;
@@ -105,12 +110,14 @@
     </header>
 
     <section id="banner">
-        <div class='banner-left'>
-            <h1 class='banner-title'>Cursos gratuitos com certificado online</h1>
-            <p class='banner-text'>Expanda seu conhecimento com todos os cursos com certificados que disponibilizamos</p>
-            <a class='banner-now' href='#'>Começar agora</a>
-        </div>
-        <div class='banner-right'>
+        <div class='inner-banner'>
+            <div class='banner-left'>
+                <h1 class='banner-title'>Cursos gratuitos com certificado online</h1>
+                <p class='banner-text'>Expanda seu conhecimento com todos os cursos com certificados que disponibilizamos</p>
+                <a class='banner-now' href='#'>Começar agora</a>
+            </div>
+            <div class='banner-right'>
+            </div>
         </div>
     </section>
     <section id="courses">
@@ -118,7 +125,9 @@
             <div class="title-courses">
                 <p>Principais cursos</p>
             </div>
-            <div class="sec-courses"></div>
+            <div class="sec-courses">
+                
+            </div>
         </div>
         <div id="moreCourses">
             <div class="title-courses">
@@ -129,10 +138,10 @@
     </section>
     
     <script>
-        .fetch("components/svg.html")
+        fetch("components/svg.html")
         .then(e=>e.text())
         .then(e=>{
-            let titles = document.querySelectorAll(".title-courses");
+            let titles = document.querySelectorAll(".title-courses")
 
             for(i of titles){
                 i.innerHTML += e
