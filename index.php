@@ -107,7 +107,7 @@
                 </div>
                 <div class="item">
                     <div class="item-img">
-                        <img href="./imgs/logo.png"></img>
+                        <img src="./imgs/logo.png">
                     </div>
                     <div class="item-info">
                         <p class="item-title">Curso de programação</p>
@@ -152,6 +152,7 @@
                     star.innerHTML = e;
                     star.children[0].children[0].classList.add(fillStar)
                     i.append(star)
+                    i.innerHTML += rate
                 }
             }
         })
