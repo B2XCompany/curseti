@@ -35,7 +35,7 @@ echo "
             .then(e=>e.text())
             .then(e=>{
                 document.body.innerHTML += e;
-                token = containerLogin.dataset.token;
+                
                 console.log(token)
             })
         }
