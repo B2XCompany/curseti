@@ -60,7 +60,7 @@
             padding: 10px;
             min-height: 500px;
             display: flex;
-            justify-content: space-between;
+            justify-content: center;
             align-items: center;
         }
         .inner-banner{
@@ -80,7 +80,7 @@
         .banner-title{
             font-size: 28px;
             font-weight: bolder;
-            clor: white;
+            color: white;
         }
         .banner-text{
             color: #CBCBCB;
@@ -126,7 +126,9 @@
                 <p>Principais cursos</p>
             </div>
             <div class="sec-courses">
+                <div class="item">
                 
+                </div>
             </div>
         </div>
         <div id="moreCourses">
