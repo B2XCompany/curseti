@@ -129,7 +129,7 @@
     </section>
     
     <script>
-        fetch("imgs/svg.html")
+        fetch("imgs/title-effect.svg")
         .then(e=>e.text())
         .then(e=>{
             let titles = document.querySelectorAll(".title-courses")
@@ -138,7 +138,7 @@
                 i.innerHTML += e
             }
         })
-        fetch("imgs/star.html")
+        fetch("imgs/star.svg")
         .then(e=>e.text())
         .then(e=>{
             let itemrate = document.querySelectorAll(".item-rate")
