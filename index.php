@@ -151,7 +151,8 @@
                     fillStar = j <= starCount ? "fill-star": "nothing"
                     star.classList.add(`star`)
                     star.classList.add(fillStar)
-                    star.innerHTML = e
+                    star.innerHTML = e;
+                    star.children[0].classList.add(fillStar)
                     i.append(star)
                 }
             }
