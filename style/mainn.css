@@ -83,6 +83,7 @@
     flex-direction: row;
     gap: 20px;
     max-width: var(--max);
+    width: 100%;
 }
 
 .item {
