@@ -73,8 +73,8 @@
                         <p class="item-title">Curso de programação</p>
                         <p class="item-users">300 alunos</p>
                         <div class="item-price">
-                            <p class="old-price"></p>
-                            <p class="actual-price">U$ 300,00</p>
+                            <p class="old-price">400,00</p>
+                            <p class="actual-price">300,00</p>
                         </div>
                         <p class="item-rate">5 stars</p>
                     </div>
@@ -88,7 +88,7 @@
                         <p class="item-users">300 alunos</p>
                         <div class="item-price">
                             <p class="old-price"></p>
-                            <p class="actual-price">U$ 300,00</p>
+                            <p class="actual-price">300,00</p>
                         </div>
                         <p class="item-rate">5 stars</p>
                     </div>
@@ -102,7 +102,7 @@
                         <p class="item-users">300 alunos</p>
                         <div class="item-price">
                             <p class="old-price"></p>
-                            <p class="actual-price">U$ 300,00</p>
+                            <p class="actual-price">300,00</p>
                         </div>
                         <p class="item-rate">5 stars</p>
                     </div>
@@ -116,7 +116,7 @@
                         <p class="item-users">300 alunos</p>
                         <div class="item-price">
                             <p class="old-price"></p>
-                            <p class="actual-price">U$ 300,00</p>
+                            <p class="actual-price">300,00</p>
                         </div>
                         <p class="item-rate">5 stars</p>
                     </div>
