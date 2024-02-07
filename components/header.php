@@ -1,7 +1,10 @@
 <?php
 // include"../sys/conexao.php";
 // $user = "a";
+session_start();
+$token = md5(microtime());
 
+$_SESSION["codLogin"] = $token;
 
 if($user){
     $text = $user;
@@ -27,11 +30,18 @@ echo "
     </header>
     <script>
         function getLogin(){
-            fetch('./components/login.php')
+            let token = '$token';
+            fetch(`./components/login.php?token=\${token}`)
             .then(e=>e.text())
             .then(e=>{
                 document.body.innerHTML += e;
+                token = containerLogin.dataset.token;
+                console.log(token)
             })
+        }
+
+        function closeLogin(){
+            containerLogin.remove();
         }
     </script>
     

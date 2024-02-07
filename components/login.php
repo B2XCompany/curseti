@@ -1,6 +1,19 @@
 
+<?php 
+session_start();
+    
+$tk = $_GET["token"];
 
-<div id="container-login">
+if(!$tk or $tk != $_SESSION["codLogin"]){
+    echo "triste";
+    exit;
+}
+
+$newToken = md5(microtime());
+$_SESSION["codLogin"] = $newToken;
+?>
+
+<div id="containerLogin" data-token='<?php echo $newToken; ?>'>
     <div class="out-login">
         <h1 class='title-login'>Entre em sua conta</h1>
         <input type='text' placeholder='exemplo@gmail.com'>
@@ -10,7 +23,7 @@
             <button class='create-login'>Criar conta</button>
         </p>
         <button class='forget-login'>Esqueci minha senha</button>
-        <button class='back-login'>Voltar</button>
+        <button onclick="closeLogin()" class='back-login'>Voltar</button>
     </div>
 
 </div>
