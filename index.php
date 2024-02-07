@@ -67,7 +67,7 @@
             <div class="sec-courses">
                 <div class="item">
                     <div class="item-img">
-                        <img href="./imgs/logo.png"></img>
+                        <img src="./imgs/logo.png">
                     </div>
                     <div class="item-info">
                         <p class="item-title">Curso de programação</p>
@@ -81,7 +81,7 @@
                 </div>
                 <div class="item">
                     <div class="item-img">
-                        <img href="./imgs/logo.png"></img>
+                        <img src="./imgs/logo.png">
                     </div>
                     <div class="item-info">
                         <p class="item-title">Curso de programação e sei la o que, machine learning e tals, sabe como é né? Texto comprido e meu deus do ceu lorem ipsum dolor</p>
@@ -94,7 +94,7 @@
                 </div>
                 <div class="item">
                     <div class="item-img">
-                        <img href="./imgs/logo.png"></img>
+                        <img src="./imgs/logo.png">
                     </div>
                     <div class="item-info">
                         <p class="item-title">Curso de programação</p>
