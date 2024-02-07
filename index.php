@@ -148,8 +148,9 @@
             for(i of itemrate){
                 for(j = 0; j < 5; j++){
                     star = document.createElement("div")
-                    fillStar = j <= starCount ? "star fill-star" : "star"
-                    star.classList.add(`${fillStar}`)
+                    fillStar = j <= starCount ? "fill-star": ""
+                    star.classList.add(`star`)
+                    star.classList.add(fillStar)
                     star.innerHTML = e
                     i.innerHTML += star
                 }
