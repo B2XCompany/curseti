@@ -152,7 +152,7 @@
                     star.classList.add(`star`)
                     star.classList.add(fillStar)
                     star.innerHTML = e
-                    i.innerHTML += star
+                    i.append(star)
                 }
             }
         })
