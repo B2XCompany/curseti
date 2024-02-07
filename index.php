@@ -144,7 +144,7 @@
             let itemrate = document.querySelectorAll(".item-rate")
 
             for(i of itemrate){
-                for(j in 5){
+                for(j = 0; j < 5; j++){
                     i.innerHTML += e
                 }
             }
