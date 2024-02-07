@@ -19,10 +19,6 @@ header {
     max-width: var(--max);
 }
 
-#banner {
-    background: #202020;
-}
-
 .head-2 {
     display: flex;
     gap: 20px;

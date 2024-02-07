@@ -5,6 +5,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    background: var(--bg);
+
 }
 
 .inner-banner {
@@ -35,7 +37,7 @@
 .banner-title {
     font-size: 28px;
     font-weight: bolder;
-    color: white;
+    color: #fff;
 }
 
 .banner-text {
@@ -46,13 +48,13 @@
     padding: 10px 30px;
     border-radius: 2px;
     width: fit-content;
-    background: #F24C4C;
+    background: var(--contraste);
     color: #fff;
     transition: .3s
 }
 
 .banner-now:hover {
-    box-shadow: 0 0 8px 0 #F24C4C;
+    box-shadow: 0 0 8px 0 var(--contraste);
 }
 
 #courses {
@@ -149,7 +151,8 @@
 }
 
 .old-price {
-    color: #F24C4C80;
+    color: var(--contraste);
+    opacity: .8;
     text-decoration: line-through;
     font-size: 0.9rem;
     width: auto;
@@ -168,5 +171,5 @@
 }
 
 .fill-star {
-    fill: #FF9900;
+    fill:var(--estrela-color);
 }

@@ -10,4 +10,7 @@
     scroll-behavior: smooth;
     font-weight: normal;
     --max: 1280px;
+    --estrela-color: #FF9900;
+    --contraste: #F24C4C; 
+    --bg: #202020;
 }
