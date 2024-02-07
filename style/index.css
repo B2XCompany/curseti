@@ -1,16 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Alata&display=swap');
 
-* {
-    padding: 0;
-    margin: 0;
-    outline: none;
-    text-decoration: none;
-    font-family: Alata, sans-serif;
-    border: none;
-    scroll-behavior: smooth;
-    font-weight: normal;
-    --max: 1000px;
-}
+
 header{
     width: 100%;
     display: flex;
@@ -19,6 +8,7 @@ header{
     position: absolute;
     top: 0;
 }
+
 .inner-header{
     height: 60px;
     display: flex;
@@ -30,19 +20,23 @@ header{
     margin: auto;
     max-width: var(--max);
 }
+
 #banner{
     background: #202020;
 }
+
 .head-2{
     display: flex;
     gap: 20px;
     align-items: center;
 }
+
 .bt-head{
     color: white;
     font-size: 16px;
     padding: 5px
 }
+
 .login{
     padding: 8px 25px;
     border-radius: 2px;
@@ -57,6 +51,7 @@ header{
     justify-content: center;
     align-items: center;
 }
+
 .inner-banner{
     width: calc(100% - 20px);
     padding: 10px;
@@ -65,27 +60,71 @@ header{
     justify-content: space-between;
     align-items: center;
 }
+
 .banner-left, .banner-right{
     width: 50%;
 }
+
 .banner-left{
     display: flex;
     flex-direction: column;
     gap: 20px;
     max-width: 400px;
 }
+
+.banner-right{
+    display: flex;
+    justify-content: flex-end;
+}
+
 .banner-title{
     font-size: 28px;
     font-weight: bolder;
     color: white;
 }
+
 .banner-text{
     color: #CBCBCB;
 }
+
 .banner-now{
     padding: 10px 30px;
     border-radius: 2px;
     width: fit-content;
     background: #F24C4C;
     color: white;
+}
+
+#courses{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.courses{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    max-width: var(--max);
+}
+
+.item{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: calc(100% / 4 - 15px);
+}
+
+.item-img {
+    width: 100%;
+    position: relative;
+    aspect-ratio: 1.5;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.item-info {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
 }

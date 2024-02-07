@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style/index.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="style/root.css">
+    <link rel="shortcut icon" href="./icon.png" type="image/x-icon">
+    <title>CurseTI - Cursos online gratuitos com certificado</title>
 </head>
 <body>
     <header>
@@ -57,7 +59,7 @@
         </div>
     </section>
     <section id="courses">
-        <div id="principalCourses">
+        <div id="principalCourses" class="courses">
             <div class="title-courses">
                 <p>Principais cursos</p>
             </div>
@@ -108,7 +110,7 @@
                 </div>
             </div>
         </div>
-        <div id="moreCourses">
+        <div id="moreCourses" class="courses">
             <div class="title-courses">
                 <p>Mais cursos</p>
             </div>
