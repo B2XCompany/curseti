@@ -152,8 +152,8 @@
                     star.innerHTML = e;
                     star.children[0].children[0].classList.add(fillStar)
                     i.append(star)
-                    i.innerHTML += rate
                 }
+                i.innerHTML += rate
             }
         })
     </script>
