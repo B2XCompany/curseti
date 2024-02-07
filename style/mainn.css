@@ -144,7 +144,7 @@
 
 .old-price {
     color: #555;
-    text-decoration: dashed;
+    text-decoration: line-through;
     font-size: 0.9rem;
     width: auto;
 }
