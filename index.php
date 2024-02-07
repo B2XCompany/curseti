@@ -76,7 +76,7 @@
                             <p class="old-price">400,00</p>
                             <p class="actual-price">300,00</p>
                         </div>
-                        <div class="nomeClasseValido🔥"></div>
+                        <div class="item-rate"></div>
                     </div>
                 </div>
                 <div class="item">
@@ -89,7 +89,7 @@
                         <div class="item-price">
                             <p class="actual-price">300,00</p>
                         </div>
-                        <div class="nomeClasseValido🔥"></div>
+                        <div class="item-rate"></div>
                     </div>
                 </div>
                 <div class="item">
@@ -102,7 +102,7 @@
                         <div class="item-price">
                             <p class="actual-price">300,00</p>
                         </div>
-                        <div class="nomeClasseValido🔥"></div>
+                        <div class="item-rate"></div>
                     </div>
                 </div>
                 <div class="item">
@@ -115,7 +115,7 @@
                         <div class="item-price">
                             <p class="actual-price">300,00</p>
                         </div>
-                        <div class="nomeClasseValido🔥"></div>
+                        <div class="item-rate"></div>
                     </div>
                 </div>
             </div>
@@ -141,7 +141,7 @@
         fetch("imgs/star.svg")
         .then(e=>e.text())
         .then(e=>{
-            let itemrate = document.querySelectorAll(".nomeClasseValido🔥")
+            let itemrate = document.querySelectorAll(".item-rate")
             rate = 4.5
             starCount = Math.floor(rate) - 1
 
