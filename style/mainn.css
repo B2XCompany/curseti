@@ -128,7 +128,7 @@
 }
 
 .item-title {
-    height: 50px;
+    max-height: 50px;
     text-overflow: ellipsis;
     font-size: 1.1rem;
     overflow: hidden;
