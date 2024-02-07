@@ -89,7 +89,7 @@
 .svg-courses {
     position: absolute;
     left: 0;
-    top: 0;
+    top: -50%;
 }
 
 .sec-courses {
