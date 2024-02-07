@@ -62,6 +62,7 @@
     flex-direction: column;
     gap: 10px;
     color: var(--cinzinha);
+    
 }
 
 .banner-right-top {
@@ -72,7 +73,7 @@
 }
 
 .banner-right-top p:before {
-    content: "+";
+    content: "+ ";
     color: var(--contraste);
 }
 
@@ -83,7 +84,7 @@
 }
 
 .banner-right-bot p:before {
-    content: '-';
+    content: '- ';
     color: var(--contraste);
 }
 

@@ -25,5 +25,14 @@ echo "
             </div>
         </div>
     </header>
+    <script>
+        function getLogin(){
+            fetch('./components/login.php')
+            .then(e=>e.text())
+            .then(e=>{
+                document.body.innerHTML += e;
+            })
+        }
+    </script>
     
 ";
