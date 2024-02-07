@@ -13,7 +13,7 @@
     <header>
         <div class='inner-header'>
             <div class='head-1'>
-                <a href="#"><img src='./imgs/logo.png'></a>
+                <a href="#"><img src='https://img-c.udemycdn.com/course/750x422/1465244_ed1a_3.jpg'></a>
             </div>
             <div class='head-2'>
                 <a href="#" class='bt-head'>Principal</a>
@@ -67,7 +67,7 @@
             <div class="sec-courses">
                 <div class="item">
                     <div class="item-img">
-                        <img src="./imgs/logo.png">
+                        <img src="">
                     </div>
                     <div class="item-info">
                         <p class="item-title">Curso de programação</p>
@@ -81,7 +81,7 @@
                 </div>
                 <div class="item">
                     <div class="item-img">
-                        <img src="./imgs/logo.png">
+                        <img src="https://img-c.udemycdn.com/course/750x422/1465244_ed1a_3.jpg">
                     </div>
                     <div class="item-info">
                         <p class="item-title">Curso de programação e sei la o que, machine learning e tals, sabe como é né? Texto comprido e meu deus do ceu lorem ipsum dolor</p>
@@ -94,7 +94,7 @@
                 </div>
                 <div class="item">
                     <div class="item-img">
-                        <img src="./imgs/logo.png">
+                        <img src="https://img-c.udemycdn.com/course/750x422/1465244_ed1a_3.jpg">
                     </div>
                     <div class="item-info">
                         <p class="item-title">Curso de programação</p>
@@ -107,7 +107,7 @@
                 </div>
                 <div class="item">
                     <div class="item-img">
-                        <img src="./imgs/logo.png">
+                        <img src="https://img-c.udemycdn.com/course/750x422/1465244_ed1a_3.jpg">
                     </div>
                     <div class="item-info">
                         <p class="item-title">Curso de programação</p>
