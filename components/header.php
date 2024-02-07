@@ -32,10 +32,10 @@ echo "
         function getLogin(){
             let token = '$token';
             fetch(`./components/login.php?token=\${token}`)
-            .then(e=>e.text())
+            .then(e=>e.json())
             .then(e=>{
-                document.body.innerHTML += e;
-                
+                document.body.innerHTML += e.element;
+                token = e.newToken;
                 console.log(token)
             })
         }
