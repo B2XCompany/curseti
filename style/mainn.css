@@ -146,9 +146,11 @@
     color: #555;
     text-decoration: dashed;
     font-size: 0.9rem;
+    width: auto;
 }
 
 .actual-price {
     color: #F24C4C;
     font-size: 1.1rem;
+    width: auto;
 }
