@@ -105,6 +105,59 @@
                         <div class="item-rate"></div>
                     </div>
                 </div>
+                <div class="item">
+                    <div class="item-img">
+                        <img src="https://img-c.udemycdn.com/course/750x422/1465244_ed1a_3.jpg">
+                    </div>
+                    <div class="item-info">
+                        <p class="item-title">Curso de programação</p>
+                        <p class="item-users">300 alunos</p>
+                        <div class="item-price">
+                            <p class="old-price">R$400,00</p>
+                            <p class="actual-price">R$300,00</p>
+                        </div>
+                        <div class="item-rate"></div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="item-img">
+                        <img src="https://img-c.udemycdn.com/course/750x422/1465244_ed1a_3.jpg">
+                    </div>
+                    <div class="item-info">
+                        <p class="item-title">Curso de programação e sei la o que, machine learning e tals, sabe como é né? Texto comprido e meu deus do ceu lorem ipsum dolor</p>
+                        <p class="item-users">300 alunos</p>
+                        <div class="item-price">
+                            <p class="actual-price">R$300,00</p>
+                        </div>
+                        <div class="item-rate"></div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="item-img">
+                        <img src="https://img-c.udemycdn.com/course/750x422/1465244_ed1a_3.jpg">
+                    </div>
+                    <div class="item-info">
+                        <p class="item-title">Curso de programação</p>
+                        <p class="item-users">300 alunos</p>
+                        <div class="item-price">
+                            <p class="actual-price">R$300,00</p>
+                        </div>
+                        <div class="item-rate"></div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="item-img">
+                        <img src="https://img-c.udemycdn.com/course/750x422/1465244_ed1a_3.jpg">
+                    </div>
+                    <div class="item-info">
+                        <p class="item-title">Curso de programação</p>
+                        <p class="item-users">300 alunos</p>
+                        <div class="item-price">
+                            <p class="actual-price">R$300,00</p>
+                        </div>
+                        <div class="item-rate"></div>
+                    </div>
+                </div>
             </div>
         </div>
         <div id="moreCourses" class="courses">
