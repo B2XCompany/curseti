@@ -62,7 +62,7 @@
     flex-direction: column;
     gap: 10px;
     color: var(--cinzinha);
-    
+    width: fit-content;
 }
 
 .banner-right-top {
