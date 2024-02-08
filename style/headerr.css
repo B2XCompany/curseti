@@ -53,3 +53,7 @@ header {
 .hiddenHeader{
     transform: translateY(-100%);
 }
+
+.activeHeader{
+    background: var(--bg);
+}
