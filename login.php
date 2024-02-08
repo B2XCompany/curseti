@@ -31,7 +31,9 @@
 
     })
     password.addEventListener("focusout", e=>{
-        spanlog.classList.remove("focusin");
+        if(!e.value){
+            spanlog.classList.remove("focusin");
+        }
     })
     </script>
 
