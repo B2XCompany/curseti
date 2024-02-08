@@ -13,11 +13,15 @@
     <div id="outBox">
         <div id="loginBox">
             <div id="loginTop">
-                <div class="inputDiv">
+                <div class="inputDiv" for="password">
                     <input onfocusin="focusIn(this)" onfocusout="focusOut(this)" name="email" id="email">
                     <span class="spanlog">Email</span>
                 </div>
-                <div class="inputDiv">
+                <div class="inputDiv" for="password">
+                    <input type="password" onfocusin="focusIn(this)" onfocusout="focusOut(this)" name="password" id="password">
+                    <span class="spanlog">Senha</span>
+                </div>
+                <div class="inputDiv" for="password">
                     <input type="password" onfocusin="focusIn(this)" onfocusout="focusOut(this)" name="password" id="password">
                     <span class="spanlog">Senha</span>
                 </div>

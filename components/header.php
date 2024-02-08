@@ -11,7 +11,7 @@ echo "
     <header id='headerP'>
         <div class='inner-header'>
             <div class='head-1'>
-                <a href='#'><img src='./imgs/logo.png'></a>
+                <a href='./'><img src='./imgs/logo.png'></a>
             </div>
             <div class='head-2'>
                 <a href='#' class='bt-head'>Principal</a>
