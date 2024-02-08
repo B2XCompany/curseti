@@ -35,6 +35,7 @@ body {
 .inputDiv {
     max-width: 400px;
     width: calc(100% - 40px);
+    position: relative;
 }
 
 .inputDiv input {
@@ -44,13 +45,11 @@ body {
     border: 1px solid #eee;
     background: transparent;
     color: #eee;
-    position: relative;
 }
 
 .inputDiv::after {
     content: 'teste';
     position: absolute;
-    display: block;
     left: 5px;
     top: 50%;
     font-size: 1rem;

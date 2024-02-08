@@ -5,7 +5,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background: var(--bg);
+    background: linear-gradient(-210deg, #202020, #101010);
 
 }
 
