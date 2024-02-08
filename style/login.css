@@ -34,11 +34,13 @@ body {
 
 .inputDiv {
     position: relative;
-    width: 100%;
+    max-width: 400px;
+    width: calc(100% - 40px);
 }
 
 .inputDiv input {
-    
+    width: calc(100% - 32px);
+    height: calc(100% - 22px);
     padding: 10px 15px;
     border-radius: 5px;
     border: 1px solid #eee;
