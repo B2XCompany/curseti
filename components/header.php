@@ -23,6 +23,7 @@ echo "
     </header>
     <script>
         function getLogin(){
+            closeLogin();
             fetch(`./components/login.php`)
             .then(e=>e.text())
             .then(e=>{
@@ -30,8 +31,17 @@ echo "
             })
         }
 
+        function getSignup(){
+            closeLogin();
+            fetch(`./components/signup.php`)
+            .then(e=>e.text())
+            .then(e=>{
+                document.body.innerHTML += e;
+            })
+        }
+
         function closeLogin(){
-            containerLogin.remove();
+            if(containerLogin) containerLogin.remove();
         }
     </script>
     
