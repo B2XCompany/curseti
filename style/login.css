@@ -60,9 +60,10 @@ body {
 
 .focusin{
     font-size: 10px!important;
-    transform: translateY(-100%)!important;
+    transform: translateY(-160%)!important;
 
 }
+
 #loginBot {
     display: flex;
     flex-direction: row;
