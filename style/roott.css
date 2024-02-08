@@ -15,3 +15,7 @@
     --bg: #202020;
     --cinzinha: #CBCBCB;
 }
+
+::placeholder{
+    color: #989898;
+}

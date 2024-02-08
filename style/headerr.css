@@ -48,21 +48,65 @@ header {
     box-shadow: 0 0 8px 0 #F24C4C;
 }
 
-#containerLogin{
+#containerLogin {
     width: 100%;
     height: 100svh;
     background: #00000050;
     backdrop-filter: blur(5px);
     position: fixed;
     top: 0;
+    display: flex;
     z-index: 10000;
+    flex-direction: column;
+    align-items: center;
 }
 
-.out-login{
+.out-login {
     width: calc(100% - 40px);
     padding: 10px;
     background: white;
     min-height: 40px;
     max-width: 300px;
     border-radius: 5px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.title-login{
+    font-size: 18px;
+    margin: 10px 0; 
+}
+
+.inps-out{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.input-login{
+    gap: 8px 15px;
+    border: 2px solid #DADADA;
+    border-radius: 2px;
+    font-size: 14px;
+    color: #989898;
+    width: 100%;
+}
+
+.bt-login{
+    gap: 8px 15px;
+    border-radius: 2px;
+    font-size: 14px;
+    color: #ffffff;
+    background: var(--contrast);
+    width: 100%;
+}
+
+.extra-login, .back-login{
+    margin-top: 10px;
+    color: #989898;
+}
+
+.extra-login button{
+    color: var(--contrast);
 }
