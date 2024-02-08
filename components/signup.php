@@ -10,7 +10,7 @@
             <button class='bt-login'>Cadastrar</button>
         </div>
         <p class='extra-login'>Já tem conta? 
-            <button>Logar</button>
+            <button onclick='getLogin()'>Logar</button>
         </p>
         <button onclick='closeLogin()' class='extra-login-bt'>Sair</button>
     </div>
