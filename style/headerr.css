@@ -85,6 +85,7 @@ header {
     gap: 15px;
     width: 100%;
     align-items: center;
+    max-width: 250px;
 }
 
 .input-login{
@@ -93,7 +94,7 @@ header {
     border-radius: 5px;
     font-size: 14px;
     color: #989898;
-    width: calc(100% - 50px);
+    width: calc(100% - 35px);
 }
 
 .bt-login{
@@ -111,7 +112,7 @@ header {
     opacity: .8;
 }
 
-.extra-login, .back-login{
+.extra-login, .back-login, .extra-login-bt{
     margin: 10px 0;
     background: transparent;
     color: #989898;
@@ -124,6 +125,5 @@ header {
 }
 
 .extra-login-bt{    
-    background: transparent;
     cursor: pointer;
 }
