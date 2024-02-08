@@ -42,7 +42,7 @@
 
         send.addEventListener('onclick', ()=>{
             let data = {user: email.value, password: password.value}
-            fetch('./sys/api/login.php',{
+            fetch('./sys/api/loginApi.php',{
                 method: "POST",
                 body: JSON.stringify(data)
             })

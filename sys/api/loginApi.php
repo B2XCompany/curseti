@@ -18,4 +18,3 @@ if(mysqli_num_rows($tryConnect) > 0){
 }
 
 echo json_encode(array("user"=>$user, "password"=>$password));
-

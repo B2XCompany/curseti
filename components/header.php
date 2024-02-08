@@ -1,4 +1,7 @@
 <?php
+
+$user = "<script>alert('opa')</script>";
+
 if($user){
     $text = $user;
 } else {
