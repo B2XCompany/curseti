@@ -8,7 +8,7 @@ if($user){
 }
 
 echo "
-    <header>
+    <header id='headerP'>
         <div class='inner-header'>
             <div class='head-1'>
                 <a href='#'><img src='./imgs/logo.png'></a>
@@ -21,4 +21,15 @@ echo "
             </div>
         </div>
     </header>
+    <script>
+        window.addEventListener('scroll', e => {
+            let wy = e.scrollTop;
+
+            if(wy > 20){
+                headerP.classList.add('hiddenHeader')
+            } else {
+                headerP.classList.remove('hiddenHeader')
+            }
+        })
+    </script>
 ";

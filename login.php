@@ -8,7 +8,11 @@
 <body>
     <div id="outBox">
         <div id="loginBox">
-        
+            <div id="loginTop">
+            <input id="name" name="name">
+            <input type="password" id="password" name="password">
+            <div id="loginBot">
+                
         </div>
     </div>
 </body>
