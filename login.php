@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
     <title>oi fofa :3</title>
     <link rel="stylesheet" href="style/login.css">
+    <link rel="stylesheet" href="style/roott.css">
 </head>
 <body>
     <div id="outBox">
