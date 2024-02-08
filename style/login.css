@@ -58,7 +58,7 @@ body {
     transition: .3s;
 }
 
-input:focus + .inputDiv::after {
+input:focus ~ .inputDiv::after {
     top: 0;
     font-size: 0.6rem;
 }
