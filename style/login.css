@@ -6,3 +6,10 @@
     align-items: center;
     justify-content: center;
 }
+
+#loginBox {
+    max-width: calc(var(--max) / 2);
+    width: calc(100% - 20px);
+    min-height: 300px;
+    background: ;
+}

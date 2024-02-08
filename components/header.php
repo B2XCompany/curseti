@@ -22,14 +22,17 @@ echo "
         </div>
     </header>
     <script>
+        let lastScrollY = window.scrollY;
         window.addEventListener('scroll', e => {
-            let wy = e.scrollY;
+            let wy = window.scrollY;
 
-            if(wy > 20){
+            if(wy < lastScrollY){
                 headerP.classList.add('hiddenHeader')
             } else {
                 headerP.classList.remove('hiddenHeader')
             }
+
+            lastScrollY = wy;
         })
     </script>
 ";
