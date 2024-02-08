@@ -6,7 +6,7 @@ header {
     position: fixed;
     top: 0;
     background: var(--bg);
-}  
+}   
 
 .inner-header {
     height: 60px;
