@@ -12,10 +12,10 @@ $email      = $json->email;
 $password   = $json->password;
 $confirm    = $json->confirm;
 
-$user       = mysqli_real_escape_string($conexao, $user);
-$email      = mysqli_real_escape_string($conexao, $email);
-$password   = mysqli_real_escape_string($conexao, $password);
-$confirm   = mysqli_real_escape_string($conexao, $confirm);
+$user       = mysqli_real_escape_string($__CONEXAO__, $user);
+$email      = mysqli_real_escape_string($__CONEXAO__, $email);
+$password   = mysqli_real_escape_string($__CONEXAO__, $password);
+$confirm   = mysqli_real_escape_string($__CONEXAO__, $confirm);
 
 if(!$user or !$email or !$password or !$confirm){
     endCode("Algum dado está faltando");
