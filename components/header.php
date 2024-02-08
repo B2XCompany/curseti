@@ -1,11 +1,4 @@
 <?php
-// include"../sys/conexao.php";
-// $user = "a";
-session_start();
-$token = md5(microtime());
-
-$_SESSION["codLogin"] = $token;
-
 if($user){
     $text = $user;
 } else {
@@ -29,15 +22,11 @@ echo "
         </div>
     </header>
     <script>
-        let token = '$token';
         function getLogin(){
-            fetch(`./components/login.php?token=\${token}`)
-            .then(e=>e.json())
+            fetch(`./components/login.php`)
+            .then(e=>e.text())
             .then(e=>{
-                console.log('Velha '+token)
-                document.body.innerHTML += e.element;
-                token = e.newToken;
-                console.log('Nova '+token)
+                document.body.innerHTML += e;
             })
         }
 
