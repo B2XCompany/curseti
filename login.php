@@ -14,7 +14,7 @@
                 <div class="inputDiv">
                     <input id="name" name="name">
                 </div>
-                <div class="inputDiv">
+                <div class="inputDiv" for="password" style="paddig-top: 20px">
                     <input type="password" id="password" name="password">
                 </div>
             </div>

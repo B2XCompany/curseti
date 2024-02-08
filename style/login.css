@@ -59,7 +59,7 @@ body {
     color: #eee;
 }
 
-input:focus > .inputDiv::after {
+.inputDiv:focus::after {
     top: 0;
     font-size: 0.6rem;
 }
