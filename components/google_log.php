@@ -36,6 +36,8 @@ const logar = async() => {
     console.log(e)
   })
 }
+
+logar();
 </script>
 
 
