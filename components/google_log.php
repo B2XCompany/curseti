@@ -1,3 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+
+<button onclick='logar()' id="signIn">Entrar</button>
+<p id="mensagem"></p>
+
 <script type="module">
   // Import the functions you need from the SDKs you need
   import { initializeApp } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-app.js";
@@ -28,5 +40,6 @@
 
 </script>
 
-<button onclick='logar()' id="signIn">Entrar</button>
-<p id="mensagem"></p>
+
+</body>
+</html>
