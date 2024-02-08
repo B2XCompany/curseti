@@ -48,22 +48,18 @@ body {
     color: #eee;
 }
 
-.inputDiv::after {
-    content: 'teste';
+#spanlog{
     position: absolute;
-    left: 5px;
     top: 50%;
     transform: translateY(-50%);
-    font-size: 1rem;
-    transition: .3s;
-    color: #eee;
+    color: white;
+    font-size: 14px;
 }
 
-.inputDiv:focus::after {
-    top: 0;
-    font-size: 0.6rem;
+.focusin{
+    transform: translateY(-100%);
+    font-size: 12px;
 }
-
 #loginBot {
     display: flex;
     flex-direction: row;

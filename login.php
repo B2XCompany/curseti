@@ -26,8 +26,12 @@
         </div>
     </div>
     <script>
-    password.addEventListener("focus", e=>{
-        spanlog.style.top = "15px";
+    password.addEventListener("focusin", e=>{
+        spanlog.classList.add("focusin");
+
+    })
+    password.addEventListener("focusout", e=>{
+        spanlog.classList.remove("focusin");
     })
     </script>
 
