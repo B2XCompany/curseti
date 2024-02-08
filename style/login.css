@@ -50,11 +50,12 @@ body {
 
 #spanlog{
     position: absolute;
-    top: 55%;
+    top: 50%;
     transition: all .3s;
     color: white;
     left: 15px;
     font-size: 14px;
+    transform: translateY(-50%);
 }
 
 .focusin{
