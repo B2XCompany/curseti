@@ -75,38 +75,41 @@ header {
 
 .title-login{
     font-size: 18px;
-    margin: 10px 0; 
+    margin: 20px 0 30px; 
 }
 
 .inps-out{
     display: flex;
     flex-direction: column;
     gap: 10px;
+    width: 100%;
 }
 
 .input-login{
-    gap: 8px 15px;
+    padding: 8px 15px;
     border: 2px solid #DADADA;
-    border-radius: 2px;
+    border-radius: 5px;
     font-size: 14px;
     color: #989898;
     width: 100%;
 }
 
 .bt-login{
-    gap: 8px 15px;
-    border-radius: 2px;
+    padding: 8px 15px;
+    border-radius: 5px;
     font-size: 14px;
     color: #ffffff;
-    background: var(--contrast);
+    background: var(--contraste);
     width: 100%;
+    background: transparent;
 }
 
 .extra-login, .back-login{
     margin-top: 10px;
+    background: transparent;
     color: #989898;
 }
 
 .extra-login button{
-    color: var(--contrast);
+    color: var(--contraste);
 }
