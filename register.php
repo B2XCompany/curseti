@@ -25,6 +25,10 @@
                     <input type="password" onfocusin="focusIn(this)" onfocusout="focusOut(this)" name="password" id="password">
                     <span class="spanlog">Senha</span>
                 </div>
+                <div class="inputDiv">
+                    <input type="password" onfocusin="focusIn(this)" onfocusout="focusOut(this)" name="passwordConfirm" id="passwordConfirm">
+                    <span class="spanlog">Confirmar senha</span>
+                </div>
             </div>
             <div id="loginBot">
                 <button id="send">Enviar</button>
@@ -45,7 +49,7 @@
         }
 
         send.addEventListener('onclick', ()=>{
-            let data = {user: name.value, email: email.value, password: password.value}
+            let data = {user: name.value, email: email.value, password: password.value, confirm: passwordConfirm.value}
             fetch('./sys/api/registerApi.php',{
                 method: "POST",
                 body: JSON.stringify(data)

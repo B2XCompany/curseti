@@ -1,6 +1,6 @@
 <?php
 
-$user = "<script>alert('opa')</script>";
+// $user = "<script>alert('opa')</script>";
 
 if($user){
     $text = $user;

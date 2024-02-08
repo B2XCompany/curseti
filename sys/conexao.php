@@ -25,3 +25,11 @@ function urlAmigavel($string) {
     $string = trim($string, '-');
     return $string;
 }
+
+function setUser($string){
+    $string = preg_replace('/[^A-Za-z-]+/', '', $string);
+}
+
+function setEmail($string){
+    $string = filter_var($string, FILTER_VALIDATE_EMAIL);
+}

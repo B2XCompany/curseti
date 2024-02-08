@@ -7,14 +7,19 @@ header('Content-Type: application/json; charset=utf-8');
 $request = file_get_contents('php://input');
 $json = json_decode($request);
 
-$user = $json->user;
+$email = $json->user;
 $password = $json->password;
 
-$tryConnect = mysqli_query($__CONEXAO__, "select * from users where email=$user and password=$password")
+$email      = mysqli_real_escape_string($conexao, $email);
+$password   = mysqli_real_escape_string($conexao, $password);
+
+$email      = setEmail($email);
+
+$tryConnect = mysqli_query($__CONEXAO__, "select * from users where email='$email' and password='$password'")
 if(mysqli_num_rows($tryConnect) > 0){
     // user existe
 } else {
-    $answer = FALSE
+    $answer = false;
 }
 
-echo json_encode(array("user"=>$user, "password"=>$password));
+echo json_encode();
