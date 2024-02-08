@@ -12,7 +12,8 @@
             <input id="name" name="name">
             <input type="password" id="password" name="password">
             <div id="loginBot">
-                
+                <a id="register" href="./register">Registrar-se</a>
+                <a id="back" href="./"></a>
         </div>
     </div>
 </body>

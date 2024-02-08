@@ -22,7 +22,7 @@ echo "
         </div>
     </header>
     <script>
-        window.addEventListener('scroll', e => {
+        document.body.addEventListener('scroll', e => {
             let wy = e.scrollTop;
 
             if(wy > 20){
