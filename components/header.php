@@ -26,7 +26,7 @@ echo "
         window.addEventListener('scroll', e => {
             let wy = window.scrollY;
 
-            if(wy < lastScrollY){
+            if(wy > lastScrollY){
                 headerP.classList.add('hiddenHeader')
             } else {
                 headerP.classList.remove('hiddenHeader')
