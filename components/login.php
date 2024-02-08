@@ -1,7 +1,5 @@
 
-<?php 
 
-echo = "
 <div id='containerLogin'>
     <div class='out-login'>
         <h1 class='title-login'>Entre em sua conta</h1>
@@ -14,6 +12,4 @@ echo = "
         <button class='forget-login'>Esqueci minha senha</button>
         <button onclick='closeLogin()' class='back-login'>Voltar</button>
     </div>
-
 </div>
-";
