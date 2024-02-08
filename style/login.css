@@ -39,7 +39,8 @@ body {
 }
 
 .inputDiv input {
-    padding-top: 20px;
+    padding-top: 30px;
+    border: 1px solid white;
     width: calc(100% - 32px);
     height: calc(100% - 22px);
     padding: 10px 15px;
