@@ -6,6 +6,7 @@
     <title>oi fofa :3</title>
     <link rel="stylesheet" href="style/login.css">
     <link rel="stylesheet" href="style/roott.css">
+    <link rel="stylesheet" href="style/headerr.css">
 </head>
 <body>
     <?php require_once"components/header.php"; ?>
