@@ -82,34 +82,37 @@ header {
 .inps-out{
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 15px;
     width: 100%;
     align-items: center;
 }
 
 .input-login{
-    padding: 8px 15px;
+    padding: 10px 15px;
     border: 2px solid #DADADA;
     border-radius: 5px;
     font-size: 14px;
     color: #989898;
-    width: calc(100% - 30px);
-    max-width: 250px;
+    width: calc(100% - 50px);
 }
 
 .bt-login{
-    padding: 8px 15px;
+    padding: 10px 15px;
     border-radius: 5px;
     font-size: 14px;
     color: #ffffff;
     background: var(--contraste);
-    width: calc(100% - 30px);
-    max-width: 250px;
+    width: 100%;
+    cursor: pointer;
+    transition: all .3s;
 
+}
+.bt-login:hover{
+    opacity: .8;
 }
 
 .extra-login, .back-login{
-    margin-top: 10px;
+    margin: 10px 0;
     background: transparent;
     color: #989898;
 }
@@ -117,5 +120,10 @@ header {
 .extra-login button{
     color: var(--contraste);
     background: transparent;
+    cursor: pointer;
+}
 
+.extra-login-bt{    
+    background: transparent;
+    cursor: pointer;
 }
