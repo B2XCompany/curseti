@@ -15,8 +15,8 @@
                     <input id="name" name="name">
                 </div>
                 <div class="inputDiv" for="password">
-                    <input type="password" id="password" name="password">
-                    <span id="spanlog">Teste</span>
+                    <input type="password" id="password" onfocusin="focusIn(this)" onfocusout="focusOut(this)" name="password">
+                    <span class="spanlog">Teste</span>
                 </div>
             </div>
             <div id="loginBot">
@@ -26,15 +26,15 @@
         </div>
     </div>
     <script>
-    password.addEventListener("focusin", e=>{
-        spanlog.classList.add("focusin");
+    function focusIn(me){
+        me.parentElement.children[1].classList.add('focusin')
+    }
 
-    })
-    password.addEventListener("focusout", e=>{
-        if(!e.target.value){
-            spanlog.classList.remove("focusin");
+    function focusOut(me){
+        if(!me.value){
+            me.parentElement.children[1].classList.remove("focusin");
         }
-    })
+    }
     </script>
 
 </body>
