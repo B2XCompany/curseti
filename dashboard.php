@@ -9,8 +9,6 @@
     <title>CurseTI - Dashboard</title>
 </head>
 <body>
-    <header>
-        
-    </header>
+    <?php require_once"components/header.php"; ?>
 </body>
 </html>

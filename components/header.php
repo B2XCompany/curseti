@@ -3,7 +3,7 @@ if($user){
     $text = $user;
 } else {
     $text = "
-        <button onclick='getLogin()' class='bt-head login'>Entrar</button>
+        <a href='./dashboard.php' class='bt-head login'>Entrar</a>
     ";
 }
 
@@ -21,28 +21,4 @@ echo "
             </div>
         </div>
     </header>
-    <script>
-        function getLogin(){
-            closeLogin();
-            fetch(`./components/login.php`)
-            .then(e=>e.text())
-            .then(e=>{
-                document.body.innerHTML += e;
-            })
-        }
-
-        function getSignup(){
-            closeLogin();
-            fetch(`./components/signup.php`)
-            .then(e=>e.text())
-            .then(e=>{
-                document.body.innerHTML += e;
-            })
-        }
-
-        function closeLogin(){
-            if(containerLogin) containerLogin.remove();
-        }
-    </script>
-    
 ";
