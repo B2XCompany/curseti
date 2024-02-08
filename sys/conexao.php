@@ -7,7 +7,15 @@ header('Access-Control-Allow-Origin: *');
 header('Access-Control-Allow-Methods: *');
 header('Access-Control-Allow-Headers: *');
 
-$user;
+$user = $_SESSION['user'];
+
+
+if($user){
+    $user = json_decode($user);
+    $name = $user->user;
+    $email = $user->email;
+    $password = $user->password;
+}
 
 $__MAIN_WEB__ = "https://top.anizero.cc/";
 $__WEB__ = $_SERVER['REQUEST_SCHEME'] . "://" . $_SERVER['HTTP_HOST'];
