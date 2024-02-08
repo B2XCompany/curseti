@@ -6,12 +6,12 @@
         <div class='inps-out'> 
             <input class='input-login' type='text' placeholder='exemplo@gmail.com'>
             <input class='input-login' type='password' placeholder='Senha'>
-            <button class='bt-login'>Entrar</button>
+            <input class='input-login' type='password' placeholder='Confirmar senha'>
+            <button class='bt-login'>Cadastrar</button>
         </div>
-        <p class='extra-login'>Ainda não tem conta? 
-            <button>Criar conta</button>
+        <p class='extra-login'>Já tem conta? 
+            <button>Logar</button>
         </p>
-        <button class='extra-login-bt'>Esqueci minha senha</button>
         <button onclick='closeLogin()' class='extra-login-bt'>Sair</button>
     </div>
 </div>
