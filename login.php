@@ -14,7 +14,7 @@
                 <div class="inputDiv">
                     <input id="name" name="name">
                 </div>
-                <div class="inputDiv" for="password" style="padding-top: 30px">
+                <div class="inputDiv" for="password">
                     <input type="password" id="password" name="password">
                     <span id="spanlog">Teste</span>
                 </div>
