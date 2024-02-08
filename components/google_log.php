@@ -28,5 +28,5 @@
 
 </script>
 
-<button id="signIn">Entrar</button>
+<button onclick='logar()' id="signIn">Entrar</button>
 <p id="mensagem"></p>
