@@ -3,7 +3,7 @@ if($user){
     $text = $user;
 } else {
     $text = "
-        <a href='./dashboard.php' class='bt-head login'>Entrar</a>
+        <a href='./login.php' class='bt-head login'>Entrar</a>
     ";
 }
 
@@ -22,8 +22,8 @@ echo "
         </div>
     </header>
     <script>
-        document.body.addEventListener('scroll', e => {
-            let wy = e.scrollTop;
+        window.addEventListener('scroll', e => {
+            let wy = e.scrollY;
 
             if(wy > 20){
                 headerP.classList.add('hiddenHeader')

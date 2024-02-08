@@ -9,11 +9,13 @@
     <div id="outBox">
         <div id="loginBox">
             <div id="loginTop">
-            <input id="name" name="name">
-            <input type="password" id="password" name="password">
+                <input id="name" name="name">
+                <input type="password" id="password" name="password">
+            </div>
             <div id="loginBot">
                 <a id="register" href="./register">Registrar-se</a>
-                <a id="back" href="./"></a>
+                <a id="back" href="./">Voltar</a>
+            </div>
         </div>
     </div>
 </body>
