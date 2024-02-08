@@ -36,15 +36,14 @@ body {
 .inputDiv {
     position: relative;
     width: 100%;
-    padding-top: 20px;
 }
 
 .inputDiv input {
+    padding-top: 20px;
     width: calc(100% - 32px);
     height: calc(100% - 22px);
     padding: 10px 15px;
     border-radius: 5px;
-    border: 1px solid #eee;
     background: transparent;
     color: #eee;
 }
@@ -53,13 +52,13 @@ body {
     position: absolute;
     top: 50%;
     color: white;
-    left: 0;
+    left: 15px;
     font-size: 14px;
 }
 
 .focusin{
     transform: translateY(-100%)!important;
-    font-size: 12px;
+    font-size: 12px!important;
 }
 #loginBot {
     display: flex;
