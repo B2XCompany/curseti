@@ -13,22 +13,22 @@
     <div id="outBox">
         <div id="loginBox">
             <div id="loginTop">
-                <div class="inputDiv" for="password">
+                <div class="inputDiv">
+                    <input onfocusin="focusIn(this)" onfocusout="focusOut(this)" name="name" id="name">
+                    <span class="spanlog">Nome</span>
+                </div>
+                <div class="inputDiv">
                     <input onfocusin="focusIn(this)" onfocusout="focusOut(this)" name="email" id="email">
                     <span class="spanlog">Email</span>
                 </div>
-                <div class="inputDiv" for="password">
-                    <input type="password" onfocusin="focusIn(this)" onfocusout="focusOut(this)" name="password" id="password">
-                    <span class="spanlog">Senha</span>
-                </div>
-                <div class="inputDiv" for="password">
+                <div class="inputDiv">
                     <input type="password" onfocusin="focusIn(this)" onfocusout="focusOut(this)" name="password" id="password">
                     <span class="spanlog">Senha</span>
                 </div>
             </div>
             <div id="loginBot">
                 <button id="send">Enviar</button>
-                <a id="register" href="./register">Registrar-se</a>
+                <a id="register" href="./login">Login</a>
                 <a id="back" href="./">Voltar</a>
             </div>
         </div>
@@ -45,8 +45,8 @@
         }
 
         send.addEventListener('onclick', ()=>{
-            let data = {user: email.value, password: password.value}
-            fetch('./sys/api/login.php',{
+            let data = {user: name.value, email: email.value, password: password.value}
+            fetch('./sys/api/register.php',{
                 method: "POST",
                 body: JSON.stringify(data)
             })
