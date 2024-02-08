@@ -10,7 +10,7 @@ $json = json_decode($request);
 $email = $json->user;
 $password = $json->password;
 
-if(!$email or $password){
+if(!$email or !$password){
     endCode("Algum dado está faltando");
 }
 
