@@ -15,34 +15,18 @@
 
     // Initialize Firebase
     const app = initializeApp(firebaseConfig);
-    const analytics = getAnalytics(app);
+    const auth = getAuth();
+    const provider = new GoogleAuthProvider();
 
-    // Import the necessary Firebase Authentication module
-    import { getAuth, createUserWithEmailAndPassword } from 'firebase/auth';
-
-    // Get the authentication instance
-    const auth = getAuth(app);
-
-    // Example function for user signup
-    function signUp(email, password) {
-        createUserWithEmailAndPassword(auth, email, password)
-            .then((userCredential) => {
-                // User signed up successfully
-                const user = userCredential.user;
-                console.log('User signed up:', user.email);
-            })
-            .catch((error) => {
-                // Handle errors during signup
-                const errorCode = error.code;
-                const errorMessage = error.message;
-                console.error('Error during signup:', errorMessage);
-            });
+    const logar = async() => {
+      signInWithPopup(auth, provider)
+      .then(e=>{
+        console.log(e)
+      })
     }
-
-    // Usage example
-    const userEmail = 'brunoricardowotzke@gmail.com';
-    const userPassword = '123';
-    signUp(userEmail, userPassword);
 
 
 </script>
+
+<button id="signIn">Entrar</button>
+<p id="mensagem"></p>
