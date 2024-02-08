@@ -32,10 +32,14 @@ body {
     width: 100%;
 }
 
-#loginTop input {
+.inputDiv {
     max-width: 400px;
     width: calc(100% - 40px);
-    padding: 5px 10px;
+}
+
+.inputDiv input {
+    width: 100%;
+    padding: 10px 15px;
     border-radius: 5px;
     border: 1px solid #eee;
     background: transparent;
@@ -43,16 +47,17 @@ body {
     position: relative;
 }
 
-#loginTop input::after {
+.inputDiv::after {
     content: 'teste';
     position: absolute;
+    display: block;
     left: 5px;
     top: 50%;
     font-size: 1rem;
     transition: .3s;
 }
 
-#loginTop input:focus::after {
+input:focus + .inputDiv::after {
     top: 0;
     font-size: 0.6rem;
 }

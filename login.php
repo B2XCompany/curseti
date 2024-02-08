@@ -11,8 +11,12 @@
     <div id="outBox">
         <div id="loginBox">
             <div id="loginTop">
-                <input id="name" name="name">
-                <input type="password" id="password" name="password">
+                <div class="inputDiv">
+                    <input id="name" name="name">
+                </div>
+                <div class="inputDiv">
+                    <input type="password" id="password" name="password">
+                </div>
             </div>
             <div id="loginBot">
                 <a id="register" href="./register">Registrar-se</a>
