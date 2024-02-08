@@ -51,8 +51,8 @@
                         <p class="item-title">Curso de programação</p>
                         <p class="item-users">300 alunos</p>
                         <div class="item-price">
-                            <p class="old-price">R$400,00</p>
                             <p class="actual-price">R$300,00</p>
+                            <p class="old-price">R$400,00</p>
                         </div>
                         <div class="item-rate"></div>
                     </div>
