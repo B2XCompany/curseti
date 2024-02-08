@@ -83,6 +83,7 @@ header {
     flex-direction: column;
     gap: 10px;
     width: 100%;
+    align-items: center;
 }
 
 .input-login{
@@ -91,7 +92,7 @@ header {
     border-radius: 5px;
     font-size: 14px;
     color: #989898;
-    width: 100%;
+    max-width: 250px;
 }
 
 .bt-login{
@@ -101,7 +102,8 @@ header {
     color: #ffffff;
     background: var(--contraste);
     width: 100%;
-    background: transparent;
+    max-width: 250px;
+
 }
 
 .extra-login, .back-login{
@@ -112,4 +114,6 @@ header {
 
 .extra-login button{
     color: var(--contraste);
+    background: transparent;
+
 }
