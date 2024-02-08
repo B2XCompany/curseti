@@ -17,4 +17,15 @@ body {
     max-width: calc(var(--max) / 2);
     width: calc(100% - 20px);
     min-height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#loginBox input {
+    width: calc(100% - 40px);
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: 1px solid #eee;
 }
