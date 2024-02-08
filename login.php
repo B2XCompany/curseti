@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="style/roott.css">
 </head>
 <body>
+    <?php require_once"components/header.php"; ?>
     <div id="outBox">
         <div id="loginBox">
             <div id="loginTop">
