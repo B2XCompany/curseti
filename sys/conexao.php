@@ -7,20 +7,31 @@ header('Access-Control-Allow-Origin: *');
 header('Access-Control-Allow-Methods: *');
 header('Access-Control-Allow-Headers: *');
 
-$user = $_SESSION['user'];
 
-var_dump($user);
+// USER 
 
+$__EMAIL__ = $_SESSION["__EMAIL__"];
+$__PASSWORD__ = $_SESSION["__PASSWORD__"];
 
-if($user){
-    $user = json_decode($user);
-    var_dump($user);
-    $name = $user->user;
-    $email = $user->email;
-    $password = $user->password;
+$_query_ = mysqli_query($conexao, "select * from users where email='$__EMAIL__' and password='$__PASSWORD__'");
 
-    echo $user, $name, $email, $password;
+if(mysqli_num_rows($_query_) < 1){
+    session_destroy();
+    session_start();
+
+    $__EMAIL__ = $_SESSION["__EMAIL__"];
+    $__PASSWORD__ = $_SESSION["__PASSWORD__"];
+} else {
+    $__ID__ = mysqli_fetch_assoc($_query_)['id'];
 }
+
+echo $__EMAIL__;
+
+// SERVER
+$__METHOD__ = $_SERVER["REQUEST_METHOD"];
+$__STATUS__ = $_SERVER["REDIRECT_STATUS"];
+$__URL__ = $_SERVER["HTTP_HOST"];    
+
 
 $__MAIN_WEB__ = "https://top.anizero.cc/";
 $__WEB__ = $_SERVER['REQUEST_SCHEME'] . "://" . $_SERVER['HTTP_HOST'];

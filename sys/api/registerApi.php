@@ -37,11 +37,8 @@ if(mysqli_num_rows($tryConnect) > 0){
 mysqli_query($__CONEXAO__, "insert into users (name, email, password) values ('$user', '$email', '$password')");
 
 
-$_SESSION["user"] = json_encode(array(
-    "user"=>$user,
-    "email"=>$email,
-    "password"=>$password
-));
+$_SESSION["email"] = $email;
+$_SESSION["password"] = $password;
 
 endCode("Sucesso!");
 
