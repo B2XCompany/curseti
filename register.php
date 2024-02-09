@@ -12,6 +12,7 @@
     <?php require_once"components/header.php"; ?>
     <div id="outBox">
         <div id="loginBox">
+            <h1 class="title-login">Entre em sua conta</h1>
             <div id="loginTop">
                 <div class="inputDiv">
                     <input onfocusin="focusIn(this)" onfocusout="focusOut(this)" name="name" id="name">
@@ -25,15 +26,18 @@
                     <input type="password" onfocusin="focusIn(this)" onfocusout="focusOut(this)" name="password" id="password">
                     <span class="spanlog">Senha</span>
                 </div>
-                <div class="inputDiv">
-                    <input type="password" onfocusin="focusIn(this)" onfocusout="focusOut(this)" name="passwordConfirm" id="passwordConfirm">
-                    <span class="spanlog">Confirmar senha</span>
-                </div>
             </div>
             <div id="loginBot">
+                <button onclick="this.children[0].classList.toggle('connect-active')" class='connect-bt'>
+                    <span>
+                        <svg width="38" height="27" viewBox="0 0 38 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M2.5 9L10.5 23L35.5 2" stroke="white" stroke-width="5"/>
+                        </svg>
+                    </span>
+                    Manter-me conectado
+                </button>
                 <button id="sendData">Enviar</button>
-                <a id="register" href="./login">Login</a>
-                <a id="back" href="./">Voltar</a>
+                <a id="register" href="./register">Ainda não tem uma conta? <span>Registrar-se</span></a>
             </div>
         </div>
     </div>
