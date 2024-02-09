@@ -31,7 +31,7 @@
                 </div>
             </div>
             <div id="loginBot">
-                <button id="send">Enviar</button>
+                <button id="sendData">Enviar</button>
                 <a id="register" href="./login">Login</a>
                 <a id="back" href="./">Voltar</a>
             </div>
@@ -48,7 +48,7 @@
             }
         }
 
-        send.addEventListener('onclick', ()=>{
+        sendData.addEventListener('onclick', ()=>{
             let data = {user: name.value, email: email.value, password: password.value, confirm: passwordConfirm.value}
             fetch('./sys/api/registerApi.php',{
                 method: "POST",

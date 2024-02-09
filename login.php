@@ -23,7 +23,7 @@
                 </div>
             </div>
             <div id="loginBot">
-                <button id="send">Enviar</button>
+                <button id="sendData">Enviar</button>
                 <a id="register" href="./register">Registrar-se</a>
                 <a id="back" href="./">Voltar</a>
             </div>
@@ -40,7 +40,7 @@
             }
         }
 
-        send.addEventListener('onclick', ()=>{
+        sendData.addEventListener('onclick', ()=>{
             let data = {user: email.value, password: password.value}
             fetch('./sys/api/loginApi.php',{
                 method: "POST",

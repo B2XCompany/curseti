@@ -7,7 +7,7 @@ header('Content-Type: application/json; charset=utf-8');
 $request = file_get_contents('php://input');
 $json = json_decode($request);
 
-$email = $json->user;
+$email = $json->email;
 $password = $json->password;
 
 $email      = mysqli_real_escape_string($__CONEXAO__, $email);
@@ -18,16 +18,23 @@ if(!$email or !$password){
 }
 
 $email      = setEmail($email);
-$password   = password_hash($password, PASSWORD_DEFAULT);
 
-$tryConnect = mysqli_query($__CONEXAO__, "select * from users where email='$email' and password='$password'");
+$tryConnect = mysqli_query($__CONEXAO__, "select * from users where email='$email'");
 
 if(mysqli_num_rows($tryConnect) < 1){
-    endCode("Usuário ou senha incorretos");
+    endCode("Usuário não encontrado");
+}
+
+$passUser   = mysqli_fetch_assoc($tryConnect)["password"];
+
+$passwordV  = password_verify($password, $passUser);
+
+if(!$passwordV){
+    endCode("Senha incorreta");
 }
 
 $_SESSION["email"] = $email;
-$_SESSION["password"] = $password;
+$_SESSION["password"] = $passUser;
 
 endCode("Sucesso!");
 
