@@ -6,9 +6,10 @@ body {
 
 #outBox {
     width: 100%;
-    min-height: calc(100svh - 100px);
+    min-height: calc(100svh - 150px);
     background: linear-gradient(-210deg, #202020, #101010);
     padding-top: 100px;
+    padding-bottom: 50px;
 }
 
 #loginBox {
