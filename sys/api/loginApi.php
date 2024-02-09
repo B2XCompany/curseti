@@ -2,7 +2,7 @@
 
 include '../conexao.php';
 
-cantLog($__EMAIL__);
+// cantLog($__EMAIL__);
 
 header('Content-Type: application/json; charset=utf-8');
 
