@@ -10,8 +10,8 @@ header('Access-Control-Allow-Headers: *');
 
 // USER 
 
-$__EMAIL__ = $_SESSION["__EMAIL__"];
-$__PASSWORD__ = $_SESSION["__PASSWORD__"];
+$__EMAIL__ = $_SESSION["email"];
+$__PASSWORD__ = $_SESSION["passsword"];
 
 $_query_ = mysqli_query($conexao, "select * from users where email='$__EMAIL__' and password='$__PASSWORD__'");
 
@@ -19,8 +19,8 @@ if(mysqli_num_rows($_query_) < 1){
     session_destroy();
     session_start();
 
-    $__EMAIL__ = $_SESSION["__EMAIL__"];
-    $__PASSWORD__ = $_SESSION["__PASSWORD__"];
+    $__EMAIL__ = $_SESSION["email"];
+    $__PASSWORD__ = $_SESSION["password"];
 } else {
     $__ID__ = mysqli_fetch_assoc($_query_)['id'];
 }
@@ -56,4 +56,23 @@ function setUser($string){
 
 function setEmail($string){
     $string = filter_var($string, FILTER_VALIDATE_EMAIL);
+}
+
+function s
+ ,resu$()goLt
+
+function cantLog($__EMAIL__){
+    if($__EMAIL__){
+        header('Content-Type: application/json; charset=utf-8');
+        echo json_encode(array("status" => 401, "response" => false, "message" => "You're logged"));
+        exit;
+    }
+}
+
+function justLog($__EMAIL__){
+    if(!$__EMAIL__){
+        header('Content-Type: application/json; charset=utf-8');
+        echo json_encode(array("status" => 401, "response" => false, "message" => "You're not logged in."));
+        exit;
+    }
 }

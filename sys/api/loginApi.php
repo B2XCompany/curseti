@@ -2,6 +2,8 @@
 
 include '../conexao.php';
 
+cantLog($__EMAIL__);
+
 header('Content-Type: application/json; charset=utf-8');
 
 $request = file_get_contents('php://input');
@@ -42,3 +44,4 @@ function endCode($msg){
     echo json_encode(array("mensagem"=>$msg));
     exit;
 }
+
