@@ -1,7 +1,7 @@
 <?php
 include"auth.php";
 session_start();
-$__CONEXAO__ = mysqli_connect($__LOG_BD_LOCAL__, $__LOG_BD_USER__, $__LOG_BD_PASSWORD__,$__LOG_BD_USER__) or die ("Atualize a página e tente novamente!");
+$__CONEXAO__ = mysqli_connect($__LOG_DB_LOCAL__, $__LOG_DB_USER__, $__LOG_DB_PASSWORD__,$__LOG_DB_USER__) or die ("Atualize a página e tente novamente!");
 
 header('Access-Control-Allow-Origin: *');
 header('Access-Control-Allow-Methods: *');
