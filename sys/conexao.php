@@ -9,12 +9,17 @@ header('Access-Control-Allow-Headers: *');
 
 $user = $_SESSION['user'];
 
+var_dump($user);
+
 
 if($user){
     $user = json_decode($user);
+    var_dump($user);
     $name = $user->user;
     $email = $user->email;
     $password = $user->password;
+
+    echo $user, $name, $email, $password;
 }
 
 $__MAIN_WEB__ = "https://top.anizero.cc/";
