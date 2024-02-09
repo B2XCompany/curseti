@@ -35,8 +35,7 @@ if(!$passwordV){
     endCode("Senha incorreta");
 }
 
-$_SESSION["email"] = $email;
-$_SESSION["password"] = $passUser;
+setLog($email, $passUser);
 
 endCode("Sucesso!");
 
