@@ -1,6 +1,5 @@
 <?php
-
-include '../sys/conexao.php';
+include '../conexao.php';
 
 header('Content-Type: application/json; charset=utf-8');
 
@@ -18,7 +17,7 @@ $password   = mysqli_real_escape_string($__CONEXAO__, $password);
 $confirm    = mysqli_real_escape_string($__CONEXAO__, $confirm);
 
 if(!$user or !$email or !$password or !$confirm){
-    endCode("Algum dado está faltando");
+    endCode("Algum dado está faltando $user, $email, $password, $confirm");
 }
 
 if($password !== $confirm){
