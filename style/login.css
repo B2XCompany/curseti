@@ -42,11 +42,12 @@ body {
     border: 1px solid white;
     width: calc(100% - 32px);
     height: calc(100% - 22px);
-    padding: 40px 15px 10px;
+    padding: 30px 15px 15px;
     border-radius: 5px;
     background: transparent;
     color: #eee;
 }
+
 
 .spanlog{
     position: absolute;
@@ -67,8 +68,37 @@ body {
 
 #loginBot {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-around;
     width: 100%;
     max-width: 400px;
+    gap: 20px;
+    align-items: center;
+}
+
+#sendData{
+    background: var(--contraste);
+    color: white;
+    padding: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all .3s;
+}
+#sendData:hover{
+    opacity: .8;
+}
+
+#register{
+    color: white;
+}
+
+#register span{
+    color: var(--contraste);
+    border-bottom: 2px dotted var(--contraste);
+}
+
+.title-login{
+    font-size: 18px;
+    color: white;
+    margin: 20px 0;
 }

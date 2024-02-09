@@ -12,6 +12,7 @@
     <?php require_once"components/header.php"; ?>
     <div id="outBox">
         <div id="loginBox">
+            <h1 class="title-login">Entre em sua conta</h1>
             <div id="loginTop">
                 <div class="inputDiv">
                     <input onfocusin="focusIn(this)" onfocusout="focusOut(this)" name="email" id="email">
@@ -24,8 +25,7 @@
             </div>
             <div id="loginBot">
                 <button id="sendData">Enviar</button>
-                <a id="register" href="./register">Registrar-se</a>
-                <a id="back" href="./">Voltar</a>
+                <a id="register" href="./register">Ainda não tem uma conta? <span>Registrar-se</span></a>
             </div>
         </div>
     </div>
