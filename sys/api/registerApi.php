@@ -31,10 +31,10 @@ $password   = password_hash($password, PASSWORD_DEFAULT);
 $tryConnect = mysqli_query($__CONEXAO__, "select * from users where email='$email'");
 
 if(mysqli_num_rows($tryConnect) > 0){
-    endCode(array("mensagem" => "Usuário já existe"));
+    endCode("Usuário já existe");
 }
 
-mysqli_query($__CONEXAO__, "insert into users (user, email, password) values ('$user', '$email', '$password')");
+mysqli_query($__CONEXAO__, "insert into users (name, email, password) values ('$user', '$email', '$password')");
 
 
 endCode("Sucesso!");
