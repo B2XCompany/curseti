@@ -37,7 +37,7 @@
                     Manter-me conectado
                 </button>
                 <button id="sendData">Enviar</button>
-                <a id="register" href="./register">Ainda não tem uma conta? <span>Registrar-se</span></a>
+                <a id="register" href="./login">Já tem uma conta? <span>Entrar agora</span></a>
             </div>
         </div>
     </div>
