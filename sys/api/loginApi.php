@@ -14,8 +14,8 @@ if(!$email or !$password){
     endCode("Algum dado está faltando");
 }
 
-$email      = mysqli_real_escape_string($conexao, $email);
-$password   = mysqli_real_escape_string($conexao, $password);
+$email      = mysqli_real_escape_string($__CONEXAO__, $email);
+$password   = mysqli_real_escape_string($__CONEXAO__, $password);
 
 $email      = setEmail($email);
 $password   = password_hash($password, PASSWORD_DEFAULT);
