@@ -83,6 +83,7 @@ body {
     border-radius: 5px;
     cursor: pointer;
     transition: all .3s;
+    width: 100%;
 }
 #sendData:hover{
     opacity: .8;
