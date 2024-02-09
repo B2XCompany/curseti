@@ -24,7 +24,7 @@
                 </div>
             </div>
             <div id="loginBot">
-                <button class='connect-bt'>
+                <button onclick="this.children[0].classList.toggle('connect-active')" class='connect-bt'>
                     <span>
                         <svg width="38" height="27" viewBox="0 0 38 27" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M2.5 9L10.5 23L35.5 2" stroke="white" stroke-width="5"/>

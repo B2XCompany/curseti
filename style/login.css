@@ -103,3 +103,35 @@ body {
     color: white;
     margin: 20px 0;
 }
+
+.connect-bt{
+    background: none;
+    display: flex;
+    gap: 10px;
+    color: white;
+    align-items: center;
+    margin-right: auto;
+}
+
+.connect-bt span{
+    width: 15px;
+    aspect-ratio: 1;
+    display: block;
+    background: white;
+    position: relative;
+    border-radius: 2px;
+    transition: all .3s;
+    cursor: pointer;
+}
+
+.connect-bt span svg{
+    width: calc(60%);
+    position: absolute;
+    height: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.connect-active{
+    background: var(--contraste)!important;
+}
