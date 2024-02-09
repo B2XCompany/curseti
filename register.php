@@ -12,7 +12,7 @@
     <?php require_once"components/header.php"; ?>
     <div id="outBox">
         <div id="loginBox">
-            <h1 class="title-login">Entre em sua conta</h1>
+            <h1 class="title-login">Crie sua conta</h1>
             <div id="loginTop">
                 <div class="inputDiv">
                     <input onfocusin="focusIn(this)" onfocusout="focusOut(this)" name="name" id="name">
