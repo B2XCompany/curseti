@@ -35,7 +35,7 @@ echo "
                 headerP.classList.remove('activeHeader')
             }
 
-            if(wy > lastScrollY){
+            if(wy > lastScrollY && wy > 30){
                 headerP.classList.add('hiddenHeader')
             } else {
                 headerP.classList.remove('hiddenHeader')
