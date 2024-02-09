@@ -58,8 +58,10 @@ function setEmail($string){
     $string = filter_var($string, FILTER_VALIDATE_EMAIL);
 }
 
-function s
- ,resu$()goLt
+function setLog($email, $pass){
+    $_SESSION['email'] = $email;
+    $_SESSION['password'] = $pass;
+}
 
 function cantLog($__EMAIL__){
     if($__EMAIL__){
