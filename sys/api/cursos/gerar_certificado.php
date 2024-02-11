@@ -7,7 +7,7 @@ error_reporting(E_ALL);
 if(!$_GET["curso"] or !$_GET["nome"]){
     exit;
 }
-$image = imagecreatefrompng('../../../imgs/base_certificado.png');
+$image = imagecreatefrompng('../../../../imgs/base_certificado.png');
 
 // Definir a cor do texto (neste caso, preto)
 $color = imagecolorallocate($image, 0, 0, 0);
@@ -107,7 +107,7 @@ imagettftextwrap($image, $fontH, 0, $xH, $yH, $colorH, $font, "N° da certifica�
 imagettftextwrap($image, $fontH, 0, $xH2, $yH2, $colorH, $font, "URL da certificação: c.curseti.com/".$v, 1000);
 // Salvar a imagem
 $t = time();
-imagepng($image, "../../../imgs/certificados/$t.png");
+imagepng($image, "../../../../imgs/certificados/$t.png");
 
 // Limpar a memória
 imagedestroy($image);
