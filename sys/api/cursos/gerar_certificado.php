@@ -107,7 +107,7 @@ imagettftextwrap($image, $fontH, 0, $xH, $yH, $colorH, $font, "N° da certifica�
 imagettftextwrap($image, $fontH, 0, $xH2, $yH2, $colorH, $font, "URL da certificação: c.curseti.com/".$v, 1000);
 // Salvar a imagem
 $t = time();
-imagepng($image, "../../../imgs/certificados/$t.png");
+imagepng($image, "../../../../imgs/certificados/$t.png");
 
 // Limpar a memória
 imagedestroy($image);
