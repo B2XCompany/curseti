@@ -7,7 +7,7 @@ error_reporting(E_ALL);
 if(!$_GET["curso"] or !$_GET["nome"]){
     exit;
 }
-$image = imagecreatefrompng('../../../imgs/base_certificado.png');
+$image = imagecreatefrompng('https://top.anizero.cc/imgs/base_certificado.png');
 
 // Definir a cor do texto (neste caso, preto)
 $color = imagecolorallocate($image, 0, 0, 0);
