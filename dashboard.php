@@ -1,3 +1,9 @@
+<?php 
+include 'sys/conexao.php';
+
+justLog($__EMAIL__);
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,8 +13,23 @@
     <link rel="stylesheet" href="style/roott.css">
     <link rel="shortcut icon" href="./icon.png" type="image/x-icon">
     <title>CurseTI - Dashboard</title>
+    <style>
+        .left{
+            width: 250px;
+            border-radius: 0 3px 3px 0;
+            background: linear-gradient(-210deg, #202020, #101010);
+            display: flex;
+            justify-content: center;
+        }
+    </style>
 </head>
 <body>
-    <?php require_once"components/header.php"; ?>
+    <div class="partes">
+        <div class="left">
+            <a href="./">
+                <img src="./imgs/logo.png">
+            </a>
+        </div>
+    </div>
 </body>
 </html>
