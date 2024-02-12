@@ -52,6 +52,7 @@ function urlAmigavel($string) {
 
 function setUser($string){
     $string = preg_replace('/[^A-Za-z-]+/', '', $string);
+    return $string;
 }
 
 function setEmail($string){
