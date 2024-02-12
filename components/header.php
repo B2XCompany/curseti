@@ -4,7 +4,6 @@ if($__ID__){
     $text = "
         <a href='./dashboard' class='bt-head login'>Dashboard</a>
     ";
-}
 } else {
     $text = "
         <a href='./login' class='bt-head login'>Entrar</a>
