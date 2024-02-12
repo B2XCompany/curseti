@@ -24,8 +24,6 @@ if(!$checkEmail){
     endCode("Email inválido");
 }
 
-$email = setEmail($email);
-
 $tryConnect = mysqli_query($__CONEXAO__, "select * from users where email='$email'");
 
 if(mysqli_num_rows($tryConnect) < 1){

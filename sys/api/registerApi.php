@@ -25,7 +25,12 @@ if($password !== $confirm){
 }
 
 $user       = setUser($user);
-$email      = setEmail($email);
+$checkEmail = setEmail($email);
+
+if(!$checkEmail){
+    endCode("Email inválido");
+}
+
 $password   = password_hash($password, PASSWORD_DEFAULT);
 
 $tryConnect = mysqli_query($__CONEXAO__, "select * from users where email='$email'");
