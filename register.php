@@ -1,3 +1,9 @@
+<?php 
+include 'sys/conexao.php';
+
+cantLog($__EMAIL__);
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>

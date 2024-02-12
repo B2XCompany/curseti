@@ -25,7 +25,6 @@ if(mysqli_num_rows($_query_) < 1){
     $__ID__ = mysqli_fetch_assoc($_query_)['id'];
 }
 
-echo $__EMAIL__;
 
 // SERVER
 $__METHOD__ = $_SERVER["REQUEST_METHOD"];
