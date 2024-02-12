@@ -58,6 +58,8 @@
                 method: "POST",
                 body: JSON.stringify(data)
             })
+            .then(e=>e.json())
+            .then(e=>console.log(e))
         })
     </script>
 
