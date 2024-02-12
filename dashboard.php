@@ -16,12 +16,12 @@ justLog($__EMAIL__);
     <style>
         .left{
             width: 250px;
-            border-radius: 0 3px 3px 0;
+            border-radius: 0 5px 5px 0;
             background: linear-gradient(-210deg, #202020, #101010);
             display: flex;
             justify-content: center;
             min-height: calc(100svh - 40px);
-            padding: 20px;
+            padding: 20px 0;
         }
     </style>
 </head>
