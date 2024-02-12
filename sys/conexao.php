@@ -13,21 +13,17 @@ header('Access-Control-Allow-Headers: *');
 $__EMAIL__ = $_SESSION["email"];
 $__PASSWORD__ = $_SESSION["password"];
 
+$_query_ = mysqli_query($__CONEXAO__, "select * from users where email='$__EMAIL__' and password='$__PASSWORD__'");
 
-if($__EMAIL__ && $__PASSWORD__){
-    $_query_ = mysqli_query($__CONEXAO__, "select * from users where email='$__EMAIL__' and password='$__PASSWORD__'");
+if(mysqli_num_rows($_query_) < 1){
+    session_destroy();
+    session_start();
 
-    if(mysqli_num_rows($_query_) < 1){
-        session_destroy();
-        session_start();
-
-        $__EMAIL__ = $_SESSION["email"];
-        $__PASSWORD__ = $_SESSION["password"];
-    } else {
-        $__ID__ = mysqli_fetch_assoc($_query_)['id'];
-    }
+    $__EMAIL__ = $_SESSION["email"];
+    $__PASSWORD__ = $_SESSION["password"];
+} else {
+    $__ID__ = mysqli_fetch_assoc($_query_)['id'];
 }
-
 
 
 // SERVER
