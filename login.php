@@ -45,7 +45,6 @@ cantLog($__EMAIL__);
             </div>
         </div>
     </div>
-    <?php require_once"components/footer.php"; ?>
 
     <script>
         function focusIn(me){
