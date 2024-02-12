@@ -11,7 +11,7 @@ header('Access-Control-Allow-Headers: *');
 // USER 
 
 $__EMAIL__ = $_SESSION["email"];
-$__PASSWORD__ = $_SESSION["passsword"];
+$__PASSWORD__ = $_SESSION["password"];
 
 $_query_ = mysqli_query($__CONEXAO__, "select * from users where email='$__EMAIL__' and password='$__PASSWORD__'");
 
