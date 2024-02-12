@@ -15,7 +15,7 @@
             <h1 class="title-login">Crie sua conta</h1>
             <div id="loginTop">
                 <div class="inputDiv">
-                    <input onfocusin="focusIn(this)" onfocusout="focusOut(this)" name="nameUser" id="name">
+                    <input onfocusin="focusIn(this)" onfocusout="focusOut(this)" name="nameUser" id="nameUser">
                     <span class="spanlog">Nome</span>
                 </div>
                 <div class="inputDiv">
