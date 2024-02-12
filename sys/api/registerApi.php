@@ -27,15 +27,16 @@ if(!$checkEmail){
 
 $password   = password_hash($password, PASSWORD_DEFAULT);
 
-$tryConnect = mysqli_query($__CONEXAO__, "select * from users where email='$email'");
+$tryConnect = mysqli_query($__CONEXAO__, "select * from users where email='$email'") or die("erro select");
 
 if(mysqli_num_rows($tryConnect) > 0){
     endCode("Usuário já existe");
 }
 
-mysqli_query($__CONEXAO__, "insert into users (name, email, password) values ('$user', '$email', '$password')");
+mysqli_query($__CONEXAO__, "insert into users (name, email, password) values ('$user', '$email', '$password')")  or die("erro insert");
 
-setLog($email, $password);
+$_SESSION['email'] = $email;
+$_SESSION['password'] = $password;
 
 endCode("Sucesso!");
 
