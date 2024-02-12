@@ -1,6 +1,6 @@
 <?php
 include"sys/conexao.php";
-if($__ID__){
+if($__EMAIL__){
     $text = "
         <a href='./dashboard' class='bt-head login'>Dashboard</a>
     ";
