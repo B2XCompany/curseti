@@ -1,5 +1,13 @@
 <?php 
 include 'sys/conexao.php';
+
+if($__EMAIL__){
+    $btStart = "<a class='banner-now' href='./dashboard'>Dashboard</a>";
+
+} else {
+    $btStart = "<a class='banner-now' href='./login'>Começar agora</a>";
+
+}
 ?>
 
 <!DOCTYPE html>
@@ -20,7 +28,7 @@ include 'sys/conexao.php';
             <div class='banner-left'>
                 <h1 class='banner-title'>Cursos gratuitos com certificado online</h1>
                 <p class='banner-text'>Expanda seu conhecimento com todos os cursos com certificados que disponibilizamos</p>
-                <a class='banner-now' href='./login'>Começar agora</a>
+                <?php echo $btStart; ?>
             </div>
             <div class='banner-right'>
                 <div class="banner-right-top">
