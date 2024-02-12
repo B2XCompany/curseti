@@ -13,6 +13,8 @@ cantLog($__EMAIL__);
     <link rel="stylesheet" href="style/login.css">
     <link rel="stylesheet" href="style/roott.css">
     <link rel="stylesheet" href="style/headerr.css">
+    <link rel="stylesheet" href="style/footer.css">
+
 </head>
 <body>
     <?php require_once"components/header.php"; ?>
@@ -47,6 +49,8 @@ cantLog($__EMAIL__);
             </div>
         </div>
     </div>
+    <?php require_once"components/footer.php"; ?>
+
     <script>
         function focusIn(me){
             me.parentElement.children[1].classList.add('focusin')

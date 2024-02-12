@@ -18,6 +18,7 @@ if($__EMAIL__){
     <link rel="stylesheet" href="style/mainn.css">
     <link rel="stylesheet" href="style/roott.css">
     <link rel="stylesheet" href="style/headerr.css">
+    <link rel="stylesheet" href="style/footer.css">
     <link rel="shortcut icon" href="./imgs/icon.png" type="image/x-icon">
     <title>CurseTI - Cursos online gratuitos com certificado</title>
 </head>
@@ -181,6 +182,8 @@ if($__EMAIL__){
             </div>
         </div>
     </section>
+    <?php require_once"components/footer.php"; ?>
+
     
     <script>
         fetch("imgs/title-effect.svg")
