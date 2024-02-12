@@ -65,7 +65,7 @@ cantLog($__EMAIL__);
                 password: password.value
             }
 
-            fetch('./sys/api/registerApi.php',{
+            fetch('./sys/api/registerApi',{
                 method: "POST",
                 body: JSON.stringify(data)
             })

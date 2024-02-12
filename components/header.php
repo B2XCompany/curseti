@@ -1,12 +1,13 @@
 <?php
 
-// $user = "<script>alert('opa')</script>";
-
-if($user){
-    $text = $user;
+if($__ID__){
+    $text = "
+        <a href='./dashboard' class='bt-head login'>Dashboard</a>
+    ";
+}
 } else {
     $text = "
-        <a href='./login.php' class='bt-head login'>Entrar</a>
+        <a href='./login' class='bt-head login'>Entrar</a>
     ";
 }
 

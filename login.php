@@ -56,7 +56,7 @@ cantLog($__EMAIL__);
 
         sendData.addEventListener('click', ()=>{
             let data = {email: email.value, password: password.value}
-            fetch('./sys/api/loginApi.php',{
+            fetch('./sys/api/loginApi',{
                 method: "POST",
                 body: JSON.stringify(data)
             })
