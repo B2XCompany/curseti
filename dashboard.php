@@ -20,7 +20,7 @@ justLog($__EMAIL__);
             background: linear-gradient(-210deg, #202020, #101010);
             display: flex;
             justify-content: center;
-            min-height: 100svg;
+            min-height: 100svh;
         }
     </style>
 </head>
