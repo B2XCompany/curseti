@@ -48,7 +48,7 @@
             }
         }
 
-        sendData.addEventListener('onclick', ()=>{
+        sendData.addEventListener('click', ()=>{
             let data = {user: email.value, password: password.value}
             fetch('./sys/api/loginApi.php',{
                 method: "POST",
