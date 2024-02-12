@@ -18,7 +18,11 @@ if(!$email or !$password){
     endCode("Algum dado está faltando");
 }
 
-$email      = setEmail($email);
+$checkEmail = setEmail($email);
+
+if(!$checkEmail){
+    endCode("Email inválido");
+}
 
 $tryConnect = mysqli_query($__CONEXAO__, "select * from users where email='$email'");
 
@@ -34,7 +38,8 @@ if(!$passwordV){
     endCode("Senha incorreta");
 }
 
-setLog($email, $passUser);
+$_SESSION['email'] = $email;
+$_SESSION['password'] = $passUser;
 
 endCode("Sucesso!");
 
