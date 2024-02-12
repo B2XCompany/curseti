@@ -1,5 +1,5 @@
 <?php
-include"sys/conexao.php";
+require_once"../sys/conexao.php";
 if($__EMAIL__){
     $text = "
         <a href='./dashboard' class='bt-head login'>Dashboard</a>
