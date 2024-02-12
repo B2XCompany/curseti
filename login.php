@@ -49,7 +49,7 @@
         }
 
         sendData.addEventListener('click', ()=>{
-            let data = {user: email.value, password: password.value}
+            let data = {email: email.value, password: password.value}
             fetch('./sys/api/loginApi.php',{
                 method: "POST",
                 body: JSON.stringify(data)
