@@ -66,8 +66,8 @@ if($__EMAIL__){
                         <p class="item-title">Curso de programação</p>
                         <p class="item-users">300 alunos</p>
                         <div class="item-price">
-                            <p class="actual-price">R$300,00</p>
-                            <p class="old-price">R$400,00</p>
+                            <p class="actual-price">Grátis</p>
+                            <p class="old-price">R$129,90</p>
                         </div>
                         <div class="item-rate"></div>
                     </div>
@@ -80,7 +80,8 @@ if($__EMAIL__){
                         <p class="item-title">Curso de programação e sei la o que, machine learning e tals, sabe como é né? Texto comprido e meu deus do ceu lorem ipsum dolor</p>
                         <p class="item-users">300 alunos</p>
                         <div class="item-price">
-                            <p class="actual-price">R$300,00</p>
+                            <p class="actual-price">R$14,90</p>
+                            <p class="old-price">R$149,90</p>
                         </div>
                         <div class="item-rate"></div>
                     </div>
@@ -93,7 +94,8 @@ if($__EMAIL__){
                         <p class="item-title">Curso de programação</p>
                         <p class="item-users">300 alunos</p>
                         <div class="item-price">
-                            <p class="actual-price">R$300,00</p>
+                            <p class="actual-price">R$9,90</p>
+                            <p class="old-price">R$119,90</p>
                         </div>
                         <div class="item-rate"></div>
                     </div>
@@ -106,7 +108,8 @@ if($__EMAIL__){
                         <p class="item-title">Curso de programação</p>
                         <p class="item-users">300 alunos</p>
                         <div class="item-price">
-                            <p class="actual-price">R$300,00</p>
+                            <p class="actual-price">R$11,90</p>
+                            <p class="old-price">R$119,90</p>
                         </div>
                         <div class="item-rate"></div>
                     </div>
@@ -119,8 +122,8 @@ if($__EMAIL__){
                         <p class="item-title">Curso de programação</p>
                         <p class="item-users">300 alunos</p>
                         <div class="item-price">
-                            <p class="old-price">R$400,00</p>
-                            <p class="actual-price">R$300,00</p>
+                            <p class="actual-price">R$19,90</p>
+                            <p class="old-price">R$179,90</p>
                         </div>
                         <div class="item-rate"></div>
                     </div>
@@ -133,7 +136,8 @@ if($__EMAIL__){
                         <p class="item-title">Curso de programação e sei la o que, machine learning e tals, sabe como é né? Texto comprido e meu deus do ceu lorem ipsum dolor</p>
                         <p class="item-users">300 alunos</p>
                         <div class="item-price">
-                            <p class="actual-price">R$300,00</p>
+                            <p class="actual-price">R$22,90</p>
+                            <p class="old-price">R$219,90</p>
                         </div>
                         <div class="item-rate"></div>
                     </div>
@@ -146,7 +150,8 @@ if($__EMAIL__){
                         <p class="item-title">Curso de programação</p>
                         <p class="item-users">300 alunos</p>
                         <div class="item-price">
-                            <p class="actual-price">R$300,00</p>
+                            <p class="actual-price">R$15,90</p>
+                            <p class="old-price">R$199,90</p>
                         </div>
                         <div class="item-rate"></div>
                     </div>
@@ -159,7 +164,8 @@ if($__EMAIL__){
                         <p class="item-title">Curso de programação</p>
                         <p class="item-users">300 alunos</p>
                         <div class="item-price">
-                            <p class="actual-price">R$300,00</p>
+                            <p class="actual-price">R$22,90</p>
+                            <p class="old-price">R$219,90</p>
                         </div>
                         <div class="item-rate"></div>
                     </div>

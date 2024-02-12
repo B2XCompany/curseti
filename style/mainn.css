@@ -196,7 +196,7 @@
 }
 
 .old-price {
-    color: var(--contraste);
+    color: #777777;
     opacity: .8;
     text-decoration: line-through;
     font-size: 0.9rem;
@@ -204,9 +204,10 @@
 }
 
 .actual-price {
-    color: #36a355;
+    color: #0b0b0b;
     font-size: 1.1rem;
     width: auto;
+    font-weight: bolder;
 }
 
 .item-rate {
