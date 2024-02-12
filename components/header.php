@@ -18,7 +18,6 @@ echo "
             <div class='head-2'>
                 <a href='#' class='bt-head'>Principal</a>
                 <a href='#' class='bt-head'>Cursos</a>
-                <a href='#' class='bt-head'>Certificações</a>
                 $text
             </div>
         </div>
