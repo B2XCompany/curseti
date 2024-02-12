@@ -63,7 +63,12 @@ cantLog($__EMAIL__);
                 body: JSON.stringify(data)
             })
             .then(e=>e.json())
-            .then(e=>console.log(e))
+            .then(e=>{
+                console.log(e)
+                if(e.response){
+                    window.location.href="../";
+                }
+            })
         })
     </script>
 

@@ -41,6 +41,11 @@ $__YEAR__ = date("Y");
 
 // FUNÇÕES
 
+function endCode($msg, $status){
+    echo json_encode(array("mensagem"=>$msg, "response"=>$status));
+    exit;
+}
+
 function urlAmigavel($string) {
     $string = mb_strtolower($string, 'UTF-8');
     $string = preg_replace('/[^A-Za-z0-9-]+/', '-', $string);

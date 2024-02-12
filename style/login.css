@@ -113,6 +113,11 @@ body {
     color: white;
     align-items: center;
     margin-right: auto;
+    cursor: pointer;
+}
+
+.connect-bt:hover span{
+    background: #ff8f8f!important;
 }
 
 .connect-bt span{
@@ -123,7 +128,6 @@ body {
     position: relative;
     border-radius: 2px;
     transition: all .1s;
-    cursor: pointer;
 }
 
 .connect-bt span svg{

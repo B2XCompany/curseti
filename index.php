@@ -48,10 +48,6 @@ if($__EMAIL__){
             </div>
         </div>
         
-<svg width="1280" height="37" viewBox="0 0 1280 37" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M1280 36.5H0L1280 0V36.5Z" fill="#5F5F5F"/>
-</svg>
-
     </section>
     <section id="courses">
         <div id="principalCourses" class="courses">

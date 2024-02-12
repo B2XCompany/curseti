@@ -17,14 +17,14 @@ $email      = mysqli_real_escape_string($__CONEXAO__, $email);
 $password   = mysqli_real_escape_string($__CONEXAO__, $password);
 
 if(!$user or !$email or !$password){
-    endCode("Algum dado está faltando $user, $email, $password");
+    endCode("Algum dado está faltando", false);
 }
 
 $user       = setUser($user);
 $checkEmail = setEmail($email);
 
 if(!$checkEmail){
-    endCode("Email inválido");
+    endCode("Email inválido", false);
 }
 
 $password   = password_hash($password, PASSWORD_DEFAULT);
@@ -32,7 +32,7 @@ $password   = password_hash($password, PASSWORD_DEFAULT);
 $tryConnect = mysqli_query($__CONEXAO__, "select * from users where email='$email'") or die("erro select");
 
 if(mysqli_num_rows($tryConnect) > 0){
-    endCode("Usuário já existe");
+    endCode("Usuário já existe", false);
 }
 
 mysqli_query($__CONEXAO__, "insert into users (name, email, password) values ('$user', '$email', '$password')")  or die("erro insert");
@@ -40,9 +40,4 @@ mysqli_query($__CONEXAO__, "insert into users (name, email, password) values ('$
 $_SESSION['email'] = $email;
 $_SESSION['password'] = $password;
 
-endCode("Sucesso!");
-
-function endCode($msg){
-    echo json_encode(array("mensagem"=>$msg));
-    exit;
-}
+endCode("Sucesso!", true);

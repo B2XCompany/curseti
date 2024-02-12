@@ -15,19 +15,19 @@ $email      = mysqli_real_escape_string($__CONEXAO__, $email);
 $password   = mysqli_real_escape_string($__CONEXAO__, $password);
 
 if(!$email or !$password){
-    endCode("Algum dado está faltando");
+    endCode("Algum dado está faltando", false);
 }
 
 $checkEmail = setEmail($email);
 
 if(!$checkEmail){
-    endCode("Email inválido");
+    endCode("Email inválido", false);
 }
 
 $tryConnect = mysqli_query($__CONEXAO__, "select * from users where email='$email'");
 
 if(mysqli_num_rows($tryConnect) < 1){
-    endCode("Usuário não encontrado");
+    endCode("Usuário não encontrado", false);
 }
 
 $passUser   = mysqli_fetch_assoc($tryConnect)["password"];
@@ -35,16 +35,13 @@ $passUser   = mysqli_fetch_assoc($tryConnect)["password"];
 $passwordV  = password_verify($password, $passUser);
 
 if(!$passwordV){
-    endCode("Senha incorreta");
+    endCode("Senha incorreta", false);
 }
 
 $_SESSION['email'] = $email;
 $_SESSION['password'] = $passUser;
 
-endCode("Sucesso!");
+endCode("Sucesso!", true);
 
-function endCode($msg){
-    echo json_encode(array("mensagem"=>$msg));
-    exit;
-}
+
 
