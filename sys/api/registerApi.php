@@ -14,8 +14,8 @@ $user       = mysqli_real_escape_string($__CONEXAO__, $user);
 $email      = mysqli_real_escape_string($__CONEXAO__, $email);
 $password   = mysqli_real_escape_string($__CONEXAO__, $password);
 
-if(!$user or !$email or !$password or !$confirm){
-    endCode("Algum dado está faltando $user, $email, $password, $confirm");
+if(!$user or !$email or !$password){
+    endCode("Algum dado está faltando $user, $email, $password");
 }
 
 $user       = setUser($user);
