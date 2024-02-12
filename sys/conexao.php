@@ -70,7 +70,6 @@ function cantLog($__EMAIL__){
     if($__EMAIL__){
         header('Content-Type: application/json; charset=utf-8');
         echo json_encode(array("status" => 401, "response" => false, "message" => "You're logged"));
-        return true;
         exit;
     }
 }
@@ -79,7 +78,6 @@ function justLog($__EMAIL__){
     if(!$__EMAIL__){
         header('Content-Type: application/json; charset=utf-8');
         echo json_encode(array("status" => 401, "response" => false, "message" => "You're not logged in."));
-        return true;
         exit;
     }
 }
