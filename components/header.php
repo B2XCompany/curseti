@@ -1,5 +1,5 @@
 <?php
-require_once"../sys/conexao.php";
+include"../sys/conexao.php";
 if($__ID__){
     $text = "
         <a href='./dashboard' class='bt-head login'>Dashboard</a>
