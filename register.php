@@ -15,7 +15,7 @@
             <h1 class="title-login">Crie sua conta</h1>
             <div id="loginTop">
                 <div class="inputDiv">
-                    <input onfocusin="focusIn(this)" onfocusout="focusOut(this)" name="name" id="name">
+                    <input onfocusin="focusIn(this)" onfocusout="focusOut(this)" name="nameUser" id="name">
                     <span class="spanlog">Nome</span>
                 </div>
                 <div class="inputDiv">
@@ -54,7 +54,7 @@
 
         sendData.addEventListener('click', ()=>{
             let data = {
-                user: name.value,
+                user: nameUser.value,
                 email: email.value,
                 password: password.value
             }
