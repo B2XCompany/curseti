@@ -1,7 +1,5 @@
 <?php 
 include 'sys/conexao.php';
-
-cantLog($__EMAIL__);
 ?>
 
 <!DOCTYPE html>
