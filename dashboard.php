@@ -14,6 +14,9 @@ justLog($__EMAIL__);
     <link rel="shortcut icon" href="./icon.png" type="image/x-icon">
     <title>CurseTI - Dashboard</title>
     <style>
+        .partes{
+            display: flex;
+        }
         .left{
             width: 30%;
             max-width: 250px;
@@ -26,7 +29,7 @@ justLog($__EMAIL__);
         }
         .right{
             width: 100%;
-            background: #ccc;
+            background: #f5f5f5;
         }
     </style>
 </head>
@@ -36,6 +39,8 @@ justLog($__EMAIL__);
             <a href="./">
                 <img src="./imgs/logo.png">
             </a>
+        </div>
+        <div class="right">
         </div>
     </div>
 </body>
