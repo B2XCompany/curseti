@@ -39,7 +39,8 @@ include 'sys/conexao.php';
         .right-in {
             width: calc(100% - 20px);
             display: flex;
-            flex-d
+            flex-direction: column;
+            align-items: center;
         }
         .welcome {
             width: 100%;
