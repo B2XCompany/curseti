@@ -138,9 +138,9 @@
 .sec-courses {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
     width: 100%;
     flex-wrap: wrap;
+    gap: 20px;
 }
 
 .item {
