@@ -37,14 +37,14 @@ include 'sys/conexao.php';
             align-content: center;
         }
         .right-in {
-            width: 90%;
+            width: calc(100% - 10px);
         }
         .progress-bar {
             display: flex;
             width: 100%;
             border-radius: 5px;
             height: 10px;
-            border: 1px solid #333;
+            background: #e1e1e1;
         }
         .progress-bar:before {
             content: "";

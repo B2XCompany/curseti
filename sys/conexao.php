@@ -124,7 +124,7 @@ function newCookie($email, $password, $time){
 }
 
 function checkCookie() {
-    $token = $_COOKIE['auth'];
+    $token = $_COOKIE['session'];
 
     list($header, $payload, $signature) = explode('.', $token);
 
