@@ -113,6 +113,12 @@ function newCookie($email, $password, $time){
   $signature = hash_hmac('sha256', $header . "." . $payload, TOKEN_KEY, true);
   $signature = base64_encode($signature);
   $token = "$header.$payload.$signature";
+
+  setcookie('csrf', $token, [
+    'httponly' => true,
+    'samesite' => 'Strict',
+]);
+
   return $token;
 }
 
