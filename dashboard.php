@@ -119,7 +119,7 @@ include 'sys/conexao.php';
                     </div>
                     <div class="user-data-box">
                         <p class="data-title">Tempo de estudo</p>
-                        <div style="display: flex; flex-direction: row; gap: 5px;">
+                        <div style="display: flex; flex-direction: row; gap: 5px; align-items: center">
                             <p class="data-num">12</p>
                             <p class="data-title">Horas</p>
                         </div>

@@ -41,3 +41,4 @@ $_SESSION['email'] = $checkEmail;
 $_SESSION['password'] = $password;
 
 endCode("Sucesso!", true);
+
