@@ -2,7 +2,7 @@
 include 'sys/conexao.php';
 
 
-justLog($__EMAIL__);
+// justLog($__EMAIL__);
 
 ?>
 
@@ -61,7 +61,11 @@ justLog($__EMAIL__);
         }
         .data-num {
             color: var(--contraste);
-            font-size
+            font-size: 1.2rem;
+        }
+        .data-text {
+            color: #C0C0C0;
+            font-size: 0.8rem;
         }
         .title-courses p{
             margin: 0;
