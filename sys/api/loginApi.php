@@ -44,7 +44,8 @@ $newCookie = newCookie($email, $password, $__TIME__);
 
 $cookie = checkCookie() ? "true" : "false";
 
-endCode(array("Sucesso!", $cookie, $newCookie), true);
+
+endCode(array("Sucesso!", $cookie, $newCookie), false);
 
 
 
