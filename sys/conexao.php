@@ -124,6 +124,6 @@ function newCookie($email, $password, $time){
 }
 
 function checkCookie(){
-    return COOKIE["auth"];
+    return $_COOKIE["auth"];
 }
 

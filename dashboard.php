@@ -39,8 +39,10 @@ justLog($__EMAIL__);
             width: 100%;
             border-radius: 5px;
             height: 10px;
+            border: 1px solid #333;
         }
-        .progress-bar:after {
+        .progress-bar:before {
+            content: "";
             width: var(--progress);
             background: var(--contraste);
         }
