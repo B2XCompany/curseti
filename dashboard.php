@@ -48,21 +48,22 @@ include 'sys/conexao.php';
         }
         .user-data-box {
             width: calc(100% / 3 - 20px);
-            aspect-ratio: 1.2;
+            height: 150px;
             border-radius: 5px;
             background: #fff;
             box-shadow: #ccc 1px 1px 4px 1px;
             display: flex;
             flex-direction: column;
             align-items: center;
+            justify-content: space-evenly;
         }
         .data-title {
             color: #656565;
-            font-size: 1.1rem;
+            font-size: 1.2rem;
         }
         .data-num {
             color: var(--contraste);
-            font-size: 1.2rem;
+            font-size: 2rem;
         }
         .data-text {
             color: #C0C0C0;
@@ -115,7 +116,9 @@ include 'sys/conexao.php';
                         <p>Em andamento</p>
                     </div>
                     <div class="user-data-box">
-                        <p>Tempo de estudo</p>
+                        <p class="data-title">Certificações</p>
+                        <p class="data-num">6</p>
+                        <p class="data-text">Ver meus certificados</p>
                     </div>
                 </div>
             </section>
