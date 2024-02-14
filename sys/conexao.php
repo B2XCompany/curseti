@@ -28,7 +28,7 @@ if(mysqli_num_rows($_query_) < 1){
     $__PASSWORD__ = $_SESSION["password"];
 } else {
     $__ID__ = mysqli_fetch_assoc($_query_)['id'];
-    $__USER__ = mysqli_fetch_assoc($_query_)['name'];
+    $_
 }
 
 
@@ -93,72 +93,3 @@ function justLog($__EMAIL__){
     }
 }
 
-// COOKIE 
-
-function newCookie($email, $password, $time){
-    $header = json_encode([
-        'alg' => 'HS256',
-        'typ' => 'JWT' 
-    ]);
-
-    $payload = json_encode([
-        'email' => $emai, 
-        'password' => $password,
-        'lastverify' => $time,
-        'exp' => time() + 3600
-    ]);
-
-    $header = base64_encode($header);
-    $payload = base64_encode($payload);
-
-    $signature = hash_hmac('sha256', $header . "." . $payload, TOKEN_KEY, true);
-    $signature = base64_encode($signature);
-    $token = "$header.$payload.$signature";
-
-    setcookie('session', $token, [
-        'httponly' => true,
-        'samesite' => 'Strict',
-    ]);
-
-    return $token;
-}
-
-function checkCookie() {
-    $token = $_COOKIE['session'];
-
-    return $token;
-
-    list($header, $payload, $signature) = explode('.', $token);
-
-    $header = json_decode(base64_decode($header), true);
-    $payload = json_decode(base64_decode($payload), true);
-
-    if ($header['alg'] != 'HS256') {
-        return false; 
-    }
-
-    $expected_signature = hash_hmac('sha256', $header . "." . $payload, TOKEN_KEY, true);
-
-    $signature = base64_decode($signature);
-
-    if (!hash_equals($expected_signature, $signature)) {
-        return false;
-    }
-
-    $email = $payload['email'];
-    $password = $payload['password'];
-    $lastverify = $payload['lastverify'];
-    $exp = $payload['exp'];
-
-    if ($exp < time()) {
-        return false; 
-    }
-
-    if (!user_exists($email, $password)) {
-        return false;
-    }
-
-    return true;
-}
-
-echo checkCookie();

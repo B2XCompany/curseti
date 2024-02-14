@@ -37,6 +37,7 @@ if(mysqli_num_rows($tryConnect) > 0){
 
 mysqli_query($__CONEXAO__, "insert into users (name, email, password, lastModify) values ('$user', '$email', '$password', '$__TIME__')")  or die("erro insert");
 
-newCookie($email, $password, $__TIME__);
+$_SESSION['email'] = $email;
+$_SESSION['password'] = $password;
 
 endCode("Sucesso!", true);

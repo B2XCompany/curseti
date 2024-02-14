@@ -34,7 +34,7 @@ include 'sys/conexao.php';
             width: 100%;
             background: #f5f5f5;
             display: flex;
-            align-content: center;
+            justify-content: center;
         }
         .right-in {
             width: calc(100% - 20px);
@@ -60,6 +60,10 @@ include 'sys/conexao.php';
             width: var(--progress);
             background: var(--contraste);
             border-radius: 5px;
+        }
+        .progress-text {
+            font-size: 0.9rem;
+            color: 7B7B7B;
         }
     </style>
 </head>
