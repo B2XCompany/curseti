@@ -39,9 +39,6 @@ include 'sys/conexao.php';
             overflow-x: hidden;
             align-items: center;
         }
-        #welcome {
-            width: 100%;
-        }
         .user-data {
             width: 100%;
             display: flex;
@@ -103,9 +100,7 @@ include 'sys/conexao.php';
             </a>
         </div>
         <div class="right">
-            <section id="welcome">
-                <p class="textW">Bem-vindo(a) <?php echo $__USER__; ?></p>
-            </section>
+
             <section id="userData">
                 <div class="title-courses">
                     <p>Sobre seu perfil</p>
