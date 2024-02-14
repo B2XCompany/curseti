@@ -36,7 +36,6 @@ $__METHOD__ = $_SERVER["REQUEST_METHOD"];
 $__STATUS__ = $_SERVER["REDIRECT_STATUS"];
 $__URL__ = $_SERVER["HTTP_HOST"];    
 
-
 $__MAIN_WEB__ = "https://top.anizero.cc/";
 $__WEB__ = $_SERVER['REQUEST_SCHEME'] . "://" . $_SERVER['HTTP_HOST'];
 
@@ -72,9 +71,6 @@ function setEmail($string){
     return $string;
 }
 
-// function setLog($email, $pass){
-    
-// }
 
 function cantLog($__EMAIL__){
     if($__EMAIL__){

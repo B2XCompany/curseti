@@ -23,7 +23,6 @@ include 'sys/conexao.php';
         .left{
             width: 30%;
             max-width: 250px;
-            border-radius: 0 5px 5px 0;
             background: linear-gradient(-210deg, #202020, #101010);
             display: flex;
             justify-content: center;
@@ -37,18 +36,24 @@ include 'sys/conexao.php';
             flex-direction: column;
             align-items: center;
         }
-        /* .right-in {
-            width: calc(100% - 20px);
-            width: 100%;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        } */
         #welcome {
             width: 100%;
         }
-        #user-data {
+        .user-data {
             width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        .user-data-box {
+            width: calc(100% / 3 - 20px);
+            aspect-ratio: 1.5;
+            border-radius: 5px;
+            background: #fff;
+            box-shadow: #666 1px 1px 4px 1px;
+        }
+        .user-data-box p {
+
         }
         .title-courses p{
             margin: 0;
@@ -84,19 +89,24 @@ include 'sys/conexao.php';
                 <p class="textW">Bem-vindo(a) <?php echo $__USER__; ?></p>
             </section>
             <section id="userData">
-                <div class="user-data-box">
-                    <div class="user-data-in">
-                        <p>Certificações</p>
-                    </div>
+                <div class="title-courses">
+                    <p>Sobre seu perfil</p>
                 </div>
-                <div class="user-data-box">
-                    <div class="user-data-in">
-                        <p>Em andamento</p>
+                <div class="user-data">
+                    <div class="user-data-box">
+                        <div class="user-data-in">
+                            <p>Certificações</p>
+                        </div>
                     </div>
-                </div>
-                <div class="user-data-box">
-                    <div class="user-data-in">
-                        <p>Tempo de estudo</p>
+                    <div class="user-data-box">
+                        <div class="user-data-in">
+                            <p>Em andamento</p>
+                        </div>
+                    </div>
+                    <div class="user-data-box">
+                        <div class="user-data-in">
+                            <p>Tempo de estudo</p>
+                        </div>
                     </div>
                 </div>
             </section>
