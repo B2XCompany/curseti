@@ -115,7 +115,7 @@ function newCookie($email, $password, $time){
     $signature = base64_encode($signature);
     $token = "$header.$payload.$signature";
 
-    setcookie('authtoken', $token, [
+    setcookie('auth', $token, [
         'httponly' => true,
         'samesite' => 'Strict',
     ]);
@@ -124,6 +124,6 @@ function newCookie($email, $password, $time){
 }
 
 function checkCookie(){
-
+    echo $_COOKIE["auth"];
 }
 

@@ -76,12 +76,10 @@ justLog($__EMAIL__);
                         </div>
                         <div class="item-info">
                             <p class="item-title">Curso de programação</p>
-                            <p class="item-users">300 alunos</p>
-                            <div class="item-price">
-                                <p class="actual-price">Grátis</p>
-                                <p class="old-price">R$179,90</p>
-                            </div>
                             <div class="item-rate"></div>
+                            <div class="course-progress">
+                                <div class="progress-bar" data-></div>
+                            </div>
                         </div>
                     </div>
                     <div class="item">
@@ -130,5 +128,37 @@ justLog($__EMAIL__);
             </section>
         </div>
     </div>
+
+
+
+    <script>
+        fetch("imgs/title-effect.svg")
+        .then(e=>e.text())
+        .then(e=>{
+            let titles = document.querySelectorAll(".title-courses")
+
+            for(i of titles){
+                i.innerHTML += e
+            }
+        })
+        fetch("imgs/star.svg")
+        .then(e=>e.text())
+        .then(e=>{
+            let itemrate = document.querySelectorAll(".item-rate")
+            rate = 4.5
+            starCount = Math.floor(rate) - 1
+
+            for(i of itemrate){
+                for(j = 0; j < 5; j++){
+                    star = document.createElement("div")
+                    fillStar = j <= starCount ? "fill-star": "🔥"
+                    star.innerHTML = e;
+                    star.children[0].children[0].classList.add(fillStar)
+                    i.append(star)
+                }
+                i.innerHTML += rate
+            }
+        })
+    </script>
 </body>
 </html>

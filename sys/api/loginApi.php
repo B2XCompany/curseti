@@ -42,7 +42,9 @@ mysqli_query($__CONEXAO__, "update users set lastModify='$__TIME__' where email=
 
 newCookie($email, $password, $__TIME__);
 
-endCode("Sucesso!", true);
+$cookie = checkCookie();
+
+endCode("Sucesso! $cookie", true);
 
 
 
