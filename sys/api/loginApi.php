@@ -38,8 +38,9 @@ if(!$passwordV){
     endCode("Senha incorreta", false);
 }
 
-$_SESSION['email'] = $email;
-$_SESSION['password'] = $passUser;
+mysqli_query($__CONEXAO__, "update users set lastModify='$__TIME__' where email='$email'")
+
+newCookie($email, $password, $__TIME__);
 
 endCode("Sucesso!", true);
 
