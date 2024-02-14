@@ -38,6 +38,7 @@ include 'sys/conexao.php';
             flex-direction: column;
             overflow-x: hidden;
             align-items: center;
+            padding-bottom: 100px;
         }
         .user-data {
             width: 100%;
@@ -175,6 +176,37 @@ include 'sys/conexao.php';
                             <div class="item-rate"></div>
                             <div class="progress-bar" style="--progress: 70%"></div>
                             <p class="progress-text">70% concluído</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="courses">
+                <div class="title-courses">
+                    <p>Cursos completos</p>
+                </div>
+                <div class="sec-courses">
+                    
+                    <div class="item">
+                        <div class="item-img">
+                            <img src="https://img-c.udemycdn.com/course/750x422/1465244_ed1a_3.jpg">
+                        </div>
+                        <div class="item-info">
+                            <p class="item-title">Curso de programação</p>
+                            <div class="item-rate"></div>
+                            <div class="progress-bar" style="--progress: 100%"></div>
+                            <p class="progress-text">Concluído</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="item-img">
+                            <img src="https://img-c.udemycdn.com/course/750x422/1465244_ed1a_3.jpg">
+                        </div>
+                        <div class="item-info">
+                            <p class="item-title">Curso de programação</p>
+                            <div class="item-rate"></div>
+                            <div class="progress-bar" style="--progress: 100%"></div>
+                            <p class="progress-text">Concluído</p>
                         </div>
                     </div>
                 </div>
