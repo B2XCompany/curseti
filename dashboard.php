@@ -113,13 +113,18 @@ include 'sys/conexao.php';
                         <p class="data-text">Ver meus certificados</p>
                     </div>
                     <div class="user-data-box">
-                        <p>Em andamento</p>
-                    </div>
-                    <div class="user-data-box">
                         <p class="data-title">Em andamento</p>
                         <p class="data-num">2</p>
                         <p class="data-text">Ver cursos</p>
                     </div>
+                    <div class="user-data-box">
+                        <p class="data-title">Tempo de estudo</p>
+                        <div>
+                            <p class="data-num">12</p>
+                            <p class="data-title">Horas</p>
+                        </div>
+                    </div>
+                    
                 </div>
             </section>
             <section class="courses">
