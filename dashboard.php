@@ -37,7 +37,7 @@ include 'sys/conexao.php';
             align-content: center;
         }
         .right-in {
-            width: calc(100% - 10px);
+            width: calc(100% - 20px);
         }
         .progress-bar {
             display: flex;
@@ -50,6 +50,7 @@ include 'sys/conexao.php';
             content: "";
             width: var(--progress);
             background: var(--contraste);
+            border-radius: 5px;
         }
     </style>
 </head>

@@ -126,6 +126,8 @@ function newCookie($email, $password, $time){
 function checkCookie() {
     $token = $_COOKIE['session'];
 
+    return $token;
+
     list($header, $payload, $signature) = explode('.', $token);
 
     $header = json_decode(base64_decode($header), true);

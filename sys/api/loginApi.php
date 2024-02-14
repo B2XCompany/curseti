@@ -40,11 +40,11 @@ if(!$passwordV){
 
 mysqli_query($__CONEXAO__, "update users set lastModify='$__TIME__' where email='$email'");
 
-newCookie($email, $password, $__TIME__);
+$newCookie = newCookie($email, $password, $__TIME__);
 
 $cookie = checkCookie() ? "true" : "false";
 
-endCode("Sucesso! $cookie", true);
+endCode(array("Sucesso!", $cookie, $newCookie), true);
 
 
 

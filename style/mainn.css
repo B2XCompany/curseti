@@ -8,7 +8,6 @@
     background: linear-gradient(-210deg, #202020, #101010);
     position: relative;
     overflow: hidden;
-
 }
 
 #banner > svg, #banner > svg path{
@@ -139,7 +138,7 @@
 .sec-courses {
     display: flex;
     flex-direction: row;
-    gap: 20px;
+    justify-content: space-between;
     width: 100%;
     flex-wrap: wrap;
 }
