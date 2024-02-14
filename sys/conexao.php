@@ -95,31 +95,31 @@ function justLog($__EMAIL__){
 // COOKIE 
 
 function newCookie($email, $password, $time){
-  $header = json_encode([
-    'alg' => 'HS256',
-    'typ' => 'JWT' 
-  ]);
+    $header = json_encode([
+        'alg' => 'HS256',
+        'typ' => 'JWT' 
+    ]);
 
-  $payload = json_encode([
-    'email' => $emai, 
-    'password' => $password,
-    'lastverify' => $time,
-    'exp' => time() + 3600 
-  ]);
+    $payload = json_encode([
+        'email' => $emai, 
+        'password' => $password,
+        'lastverify' => $time,
+        'exp' => time() + 3600 
+    ]);
 
-  $header = base64_encode($header);
-  $payload = base64_encode($payload);
+    $header = base64_encode($header);
+    $payload = base64_encode($payload);
 
-  $signature = hash_hmac('sha256', $header . "." . $payload, TOKEN_KEY, true);
-  $signature = base64_encode($signature);
-  $token = "$header.$payload.$signature";
+    $signature = hash_hmac('sha256', $header . "." . $payload, TOKEN_KEY, true);
+    $signature = base64_encode($signature);
+    $token = "$header.$payload.$signature";
 
-  setcookie('csrf', $token, [
-    'httponly' => true,
-    'samesite' => 'Strict',
-]);
+    setcookie('authtoken', $token, [
+        'httponly' => true,
+        'samesite' => 'Strict',
+    ]);
 
-  return $token;
+    return $token;
 }
 
 echo newCookie("brunoricardowotzke@gmail.com", '123', time());
