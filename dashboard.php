@@ -34,7 +34,7 @@ include 'sys/conexao.php';
             width: 100%;
             background: #f5f5f5;
             display: flex;
-            align-conten
+            align-content: center;
         }
         .right-in {
             width: 90%;
