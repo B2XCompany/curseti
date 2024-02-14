@@ -63,7 +63,7 @@ include 'sys/conexao.php';
         }
         .progress-text {
             font-size: 0.9rem;
-            color: 7B7B7B;
+            color: #7B7B7B;
         }
     </style>
 </head>

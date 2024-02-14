@@ -28,7 +28,6 @@ if(mysqli_num_rows($_query_) < 1){
     $__PASSWORD__ = $_SESSION["password"];
 } else {
     $__ID__ = mysqli_fetch_assoc($_query_)['id'];
-    $_
 }
 
 
@@ -73,9 +72,9 @@ function setEmail($string){
     return $string;
 }
 
-
-
-// LOG  
+// function setLog($email, $pass){
+    
+// }
 
 function cantLog($__EMAIL__){
     if($__EMAIL__){
@@ -92,4 +91,3 @@ function justLog($__EMAIL__){
         exit;
     }
 }
-
