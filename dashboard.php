@@ -19,6 +19,7 @@ include 'sys/conexao.php';
     <style>
         .partes{
             display: flex;
+            height: 100svh;
         }
         .left{
             width: 30%;
@@ -33,7 +34,9 @@ include 'sys/conexao.php';
             width: 100%;
             background: #f5f5f5;
             display: flex;
+            overflow-y: scroll;
             flex-direction: column;
+            overflow-x: hidden;
             align-items: center;
         }
         #welcome {
@@ -50,8 +53,9 @@ include 'sys/conexao.php';
             width: calc(100% / 3 - 20px);
             height: 150px;
             border-radius: 5px;
+            border: 1px solid #eaeaea;
             background: #fff;
-            box-shadow: #ccc 1px 1px 4px 1px;
+            box-shadow: #ebebeb 0px 0px 20px 0px;
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -76,7 +80,7 @@ include 'sys/conexao.php';
             display: flex;
             width: 100%;
             border-radius: 5px;
-            height: 10px;
+            height: 5px;
             background: #e1e1e1;
         }
         .progress-bar:before {
