@@ -38,6 +38,14 @@ include 'sys/conexao.php';
         }
         .right-in {
             width: calc(100% - 20px);
+            display: flex;
+            flex-d
+        }
+        .welcome {
+            width: 100%;
+        }
+        .user-data {
+            width: 100%;
         }
         .progress-bar {
             display: flex;

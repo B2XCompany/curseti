@@ -161,3 +161,4 @@ function checkCookie() {
     return true;
 }
 
+echo checkCookie();
