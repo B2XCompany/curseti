@@ -2,7 +2,7 @@
 include 'sys/conexao.php';
 
 
-// justLog($__EMAIL__);
+justLog($__EMAIL__);
 
 ?>
 
@@ -47,13 +47,21 @@ include 'sys/conexao.php';
         }
         .user-data-box {
             width: calc(100% / 3 - 20px);
-            aspect-ratio: 1.5;
+            aspect-ratio: 1.2;
             border-radius: 5px;
             background: #fff;
-            box-shadow: #666 1px 1px 4px 1px;
+            box-shadow: #ccc 1px 1px 4px 1px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
-        .user-data-box p {
-
+        .data-title {
+            color: #656565;
+            font-size: 1.1rem;
+        }
+        .data-num {
+            color: var(--contraste);
+            font-size
         }
         .title-courses p{
             margin: 0;
@@ -94,19 +102,15 @@ include 'sys/conexao.php';
                 </div>
                 <div class="user-data">
                     <div class="user-data-box">
-                        <div class="user-data-in">
-                            <p>Certificações</p>
-                        </div>
+                        <p class="data-title">Certificações</p>
+                        <p class="data-num">6</p>
+                        <p class="data-text">Ver meus certificados</p>
                     </div>
                     <div class="user-data-box">
-                        <div class="user-data-in">
-                            <p>Em andamento</p>
-                        </div>
+                        <p>Em andamento</p>
                     </div>
                     <div class="user-data-box">
-                        <div class="user-data-in">
-                            <p>Tempo de estudo</p>
-                        </div>
+                        <p>Tempo de estudo</p>
                     </div>
                 </div>
             </section>

@@ -15,8 +15,8 @@ header('Access-Control-Allow-Headers: *');
 
 // USER 
 
-$__EMAIL__ = $_SESSION["email"];
-$__PASSWORD__ = $_SESSION["password"];
+$__EMAIL__ = decrypt($_SESSION["email"]);
+$__PASSWORD__ = decrypt($_SESSION["password"]);
 
 $_query_ = mysqli_query($__CONEXAO__, "select * from users where email='$__EMAIL__' and password='$__PASSWORD__'");
 
@@ -62,13 +62,13 @@ function setUser($string){
     $string = trim($string);
     $string = preg_replace('/\s+/', ' ', $string);
     $string = preg_replace('/[^A-Za-z]+/', ' ', $string);
-    return $string;
+    return encrypt($string);
 }
 
 
 function setEmail($string){
     $string = filter_var($string, FILTER_VALIDATE_EMAIL);
-    return $string;
+    return encrypt($string);
 }
 
 
