@@ -123,7 +123,4 @@ function newCookie($email, $password, $time){
     return $token;
 }
 
-function checkCookie(){
-    echo $_COOKIE["auth"];
-}
-
+echo $_COOKIE["auth"];

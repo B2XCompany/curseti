@@ -78,7 +78,7 @@ justLog($__EMAIL__);
                             <p class="item-title">Curso de programação</p>
                             <div class="item-rate"></div>
                             <div class="course-progress">
-                                <div class="progress-bar" data-></div>
+                                <div class="progress-bar" data-progress="70"></div>
                             </div>
                         </div>
                     </div>
