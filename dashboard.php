@@ -116,9 +116,9 @@ include 'sys/conexao.php';
                         <p>Em andamento</p>
                     </div>
                     <div class="user-data-box">
-                        <p class="data-title">Certificações</p>
-                        <p class="data-num">6</p>
-                        <p class="data-text">Ver meus certificados</p>
+                        <p class="data-title">Em andamento</p>
+                        <p class="data-num">2</p>
+                        <p class="data-text">Ver cursos</p>
                     </div>
                 </div>
             </section>
