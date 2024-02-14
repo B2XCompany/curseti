@@ -42,6 +42,7 @@ justLog($__EMAIL__);
         }
         .progress-bar:after {
             width: var(--progress);
+            background: var(--contraste);
         }
     </style>
 </head>
