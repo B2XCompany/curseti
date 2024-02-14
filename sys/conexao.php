@@ -123,7 +123,39 @@ function newCookie($email, $password, $time){
     return $token;
 }
 
-function checkCookie(){
-    return $_COOKIE["auth"];
+function checkCookie() {
+    $token = $_COOKIE['auth'];
+
+    list($header, $payload, $signature) = explode('.', $token);
+
+    $header = json_decode(base64_decode($header), true);
+    $payload = json_decode(base64_decode($payload), true);
+
+    if ($header['alg'] != 'HS256') {
+        return false; 
+    }
+
+    $expected_signature = hash_hmac('sha256', $header . "." . $payload, TOKEN_KEY, true);
+
+    $signature = base64_decode($signature);
+
+    if (!hash_equals($expected_signature, $signature)) {
+        return false;
+    }
+
+    $email = $payload['email'];
+    $password = $payload['password'];
+    $lastverify = $payload['lastverify'];
+    $exp = $payload['exp'];
+
+    if ($exp < time()) {
+        return false; 
+    }
+
+    if (!user_exists($email, $password)) {
+        return false;
+    }
+
+    return true;
 }
 

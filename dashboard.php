@@ -33,6 +33,11 @@ include 'sys/conexao.php';
         .right{
             width: 100%;
             background: #f5f5f5;
+            display: flex;
+            align-conten
+        }
+        .right-in {
+            width: 90%;
         }
         .progress-bar {
             display: flex;
@@ -56,87 +61,80 @@ include 'sys/conexao.php';
             </a>
         </div>
         <div class="right">
-            <section id="welcome">
-                <p class="textW">Bem-vindo(a) <?php echo $__USER__; ?></p>
-            </section>
-            <section id="userData">
-                <div class="user-data-box">
-                    <div class="user-data-in">
-                        <p>Certificações</p>
-                    </div>
-                </div>
-                <div class="user-data-box">
-                    <div class="user-data-in">
-                        <p>Em andamento</p>
-                    </div>
-                </div>
-                <div class="user-data-box">
-                    <div class="user-data-in">
-                        <p>Tempo de estudo</p>
-                    </div>
-                </div>
-            </section>
-            <section class="courses">
-                <div class="title-courses">
-                    <p>Cursos em andamento</p>
-                </div>
-                <div class="sec-courses">
-                    
-                    <div class="item">
-                        <div class="item-img">
-                            <img src="https://img-c.udemycdn.com/course/750x422/1465244_ed1a_3.jpg">
-                        </div>
-                        <div class="item-info">
-                            <p class="item-title">Curso de programação</p>
-                            <div class="item-rate"></div>
-                            <div class="progress-bar" style="--progress: 70%"></div>
-                            <p class="progress-text">70% concluído</p>
+            <div class="right-in">
+                <section id="welcome">
+                    <p class="textW">Bem-vindo(a) <?php echo $__USER__; ?></p>
+                </section>
+                <section id="userData">
+                    <div class="user-data-box">
+                        <div class="user-data-in">
+                            <p>Certificações</p>
                         </div>
                     </div>
-                    <div class="item">
-                        <div class="item-img">
-                            <img src="https://img-c.udemycdn.com/course/750x422/1465244_ed1a_3.jpg">
+                    <div class="user-data-box">
+                        <div class="user-data-in">
+                            <p>Em andamento</p>
                         </div>
-                        <div class="item-info">
-                            <p class="item-title">Curso de programação e sei la o que, machine learning e tals, sabe como é né? Texto comprido e meu deus do ceu lorem ipsum dolor</p>
-                            <p class="item-users">300 alunos</p>
-                            <div class="item-price">
-                                <p class="actual-price">R$22,90</p>
-                                <p class="old-price">R$219,90</p>
+                    </div>
+                    <div class="user-data-box">
+                        <div class="user-data-in">
+                            <p>Tempo de estudo</p>
+                        </div>
+                    </div>
+                </section>
+                <section class="courses">
+                    <div class="title-courses">
+                        <p>Cursos em andamento</p>
+                    </div>
+                    <div class="sec-courses">
+                        
+                        <div class="item">
+                            <div class="item-img">
+                                <img src="https://img-c.udemycdn.com/course/750x422/1465244_ed1a_3.jpg">
                             </div>
-                            <div class="item-rate"></div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="item-img">
-                            <img src="https://img-c.udemycdn.com/course/750x422/1465244_ed1a_3.jpg">
-                        </div>
-                        <div class="item-info">
-                            <p class="item-title">Curso de programação</p>
-                            <p class="item-users">300 alunos</p>
-                            <div class="item-price">
-                                <p class="actual-price">R$15,90</p>
-                                <p class="old-price">R$199,90</p>
+                            <div class="item-info">
+                                <p class="item-title">Curso de programação</p>
+                                <div class="item-rate"></div>
+                                <div class="progress-bar" style="--progress: 70%"></div>
+                                <p class="progress-text">70% concluído</p>
                             </div>
-                            <div class="item-rate"></div>
                         </div>
-                    </div>
-                    <div class="item">
-                        <div class="item-img">
-                            <img src="https://img-c.udemycdn.com/course/750x422/1465244_ed1a_3.jpg">
-                        </div>
-                        <div class="item-info">
-                            <p class="item-title">Curso de programação</p>
-                            <p class="item-users">300 alunos</p>
-                            <div class="item-price">
-                                <p class="actual-price">R$22,90</p>
-                                <p class="old-price">R$219,90</p>
+                        <div class="item">
+                            <div class="item-img">
+                                <img src="https://img-c.udemycdn.com/course/750x422/1465244_ed1a_3.jpg">
                             </div>
-                            <div class="item-rate"></div>
+                            <div class="item-info">
+                                <p class="item-title">Curso de programação</p>
+                                <div class="item-rate"></div>
+                                <div class="progress-bar" style="--progress: 30%"></div>
+                                <p class="progress-text">30% concluído</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="item-img">
+                                <img src="https://img-c.udemycdn.com/course/750x422/1465244_ed1a_3.jpg">
+                            </div>
+                            <div class="item-info">
+                                <p class="item-title">Curso de programação</p>
+                                <div class="item-rate"></div>
+                                <div class="progress-bar" style="--progress: 70%"></div>
+                                <p class="progress-text">70% concluído</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="item-img">
+                                <img src="https://img-c.udemycdn.com/course/750x422/1465244_ed1a_3.jpg">
+                            </div>
+                            <div class="item-info">
+                                <p class="item-title">Curso de programação</p>
+                                <div class="item-rate"></div>
+                                <div class="progress-bar" style="--progress: 70%"></div>
+                                <p class="progress-text">70% concluído</p>
+                            </div>
                         </div>
                     </div>
-                </div>
-            </section>
+                </section>
+            </div>
         </div>
     </div>
 
