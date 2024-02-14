@@ -35,9 +35,8 @@ if(mysqli_num_rows($tryConnect) > 0){
     endCode("Usuário já existe", false);
 }
 
-mysqli_query($__CONEXAO__, "insert into users (name, email, password) values ('$user', '$email', '$password')")  or die("erro insert");
+mysqli_query($__CONEXAO__, "insert into users (name, email, password, lastModify) values ('$user', '$email', '$password', '$__TIME__')")  or die("erro insert");
 
-$_SESSION['email'] = $email;
-$_SESSION['password'] = $password;
+newCookie($email, $password, $__TIME__);
 
 endCode("Sucesso!", true);

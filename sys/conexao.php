@@ -28,6 +28,7 @@ if(mysqli_num_rows($_query_) < 1){
     $__PASSWORD__ = $_SESSION["password"];
 } else {
     $__ID__ = mysqli_fetch_assoc($_query_)['id'];
+    $__USER__ = mysqli_fetch_assoc($_query_)['name'];
 }
 
 
@@ -104,7 +105,7 @@ function newCookie($email, $password, $time){
         'email' => $emai, 
         'password' => $password,
         'lastverify' => $time,
-        'exp' => time() + 3600 
+        'exp' => time() + 3600
     ]);
 
     $header = base64_encode($header);
@@ -122,4 +123,7 @@ function newCookie($email, $password, $time){
     return $token;
 }
 
-echo newCookie("brunoricardowotzke@gmail.com", '123', time());
+function checkCookie(){
+
+}
+
