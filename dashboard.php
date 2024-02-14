@@ -34,6 +34,10 @@ justLog($__EMAIL__);
             width: 100%;
             background: #f5f5f5;
         }
+        .progress-bar {
+            display: flex;
+            width: 90%
+        }
     </style>
 </head>
 <body>
@@ -77,9 +81,8 @@ justLog($__EMAIL__);
                         <div class="item-info">
                             <p class="item-title">Curso de programação</p>
                             <div class="item-rate"></div>
-                            <div class="course-progress">
-                                <div class="progress-bar" data-progress="70"></div>
-                            </div>
+                            <div class="progress-bar" data-progress="70"></div>
+                            <p class="progress-text">n concluído</p>
                         </div>
                     </div>
                     <div class="item">
