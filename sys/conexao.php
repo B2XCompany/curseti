@@ -72,9 +72,9 @@ function setEmail($string){
     return $string;
 }
 
-// function setLog($email, $pass){
-    
-// }
+
+
+// LOG  
 
 function cantLog($__EMAIL__){
     if($__EMAIL__){
@@ -91,3 +91,29 @@ function justLog($__EMAIL__){
         exit;
     }
 }
+
+// COOKIE 
+
+function newCookie($email, $password, $time){
+  $header = json_encode([
+    'alg' => 'HS256',
+    'typ' => 'JWT' 
+  ]);
+
+  $payload = json_encode([
+    'email' => $emai, 
+    'password' => $password,
+    'lastverify' => $time,
+    'exp' => time() + 3600 
+  ]);
+
+  $header = base64_encode($header);
+  $payload = base64_encode($payload);
+
+  $signature = hash_hmac('sha256', $header . "." . $payload, TOKEN_KEY, true);
+  $signature = base64_encode($signature);
+  $token = "$header.$payload.$signature";
+  return $token;
+}
+
+echo newCookie("brunoricardowotzke@gmail.com", '123', time());
