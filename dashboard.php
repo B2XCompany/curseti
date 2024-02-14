@@ -50,6 +50,9 @@ include 'sys/conexao.php';
         #user-data {
             width: 100%;
         }
+        .title-courses p{
+            margin: 0;
+        }
         .progress-bar {
             display: flex;
             width: 100%;
