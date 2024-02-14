@@ -44,6 +44,7 @@ include 'sys/conexao.php';
             display: flex;
             flex-direction: row;
             justify-content: space-between;
+            height: fit-content;
         }
         .user-data-box {
             width: calc(100% / 3 - 20px);
