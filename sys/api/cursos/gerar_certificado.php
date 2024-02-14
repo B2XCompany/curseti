@@ -11,6 +11,7 @@ justLog($__EMAIL__);
 if(!$_GET["curso"] or !$_GET["nome"]){
     exit;
 }
+
 $image = imagecreatefrompng('../../../imgs/base_certificado.png');
 
 // Definir a cor do texto (neste caso, preto)

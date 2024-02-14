@@ -34,18 +34,20 @@ include 'sys/conexao.php';
             width: 100%;
             background: #f5f5f5;
             display: flex;
-            justify-content: center;
-        }
-        .right-in {
-            width: calc(100% - 20px);
-            display: flex;
             flex-direction: column;
             align-items: center;
         }
-        .welcome {
+        /* .right-in {
+            width: calc(100% - 20px);
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        } */
+        #welcome {
             width: 100%;
         }
-        .user-data {
+        #user-data {
             width: 100%;
         }
         .progress-bar {
@@ -75,95 +77,84 @@ include 'sys/conexao.php';
             </a>
         </div>
         <div class="right">
-            <div class="right-in">
-                <section id="welcome">
-                    <p class="textW">Bem-vindo(a) <?php echo $__USER__; ?></p>
-                </section>
-                <section id="userData">
-                    <div class="user-data-box">
-                        <div class="user-data-in">
-                            <p>Certificações</p>
+            <section id="welcome">
+                <p class="textW">Bem-vindo(a) <?php echo $__USER__; ?></p>
+            </section>
+            <section id="userData">
+                <div class="user-data-box">
+                    <div class="user-data-in">
+                        <p>Certificações</p>
+                    </div>
+                </div>
+                <div class="user-data-box">
+                    <div class="user-data-in">
+                        <p>Em andamento</p>
+                    </div>
+                </div>
+                <div class="user-data-box">
+                    <div class="user-data-in">
+                        <p>Tempo de estudo</p>
+                    </div>
+                </div>
+            </section>
+            <section class="courses">
+                <div class="title-courses">
+                    <p>Cursos em andamento</p>
+                </div>
+                <div class="sec-courses">
+                    
+                    <div class="item">
+                        <div class="item-img">
+                            <img src="https://img-c.udemycdn.com/course/750x422/1465244_ed1a_3.jpg">
+                        </div>
+                        <div class="item-info">
+                            <p class="item-title">Curso de programação</p>
+                            <div class="item-rate"></div>
+                            <div class="progress-bar" style="--progress: 70%"></div>
+                            <p class="progress-text">70% concluído</p>
                         </div>
                     </div>
-                    <div class="user-data-box">
-                        <div class="user-data-in">
-                            <p>Em andamento</p>
+                    <div class="item">
+                        <div class="item-img">
+                            <img src="https://img-c.udemycdn.com/course/750x422/1465244_ed1a_3.jpg">
+                        </div>
+                        <div class="item-info">
+                            <p class="item-title">Curso de programação</p>
+                            <div class="item-rate"></div>
+                            <div class="progress-bar" style="--progress: 30%"></div>
+                            <p class="progress-text">30% concluído</p>
                         </div>
                     </div>
-                    <div class="user-data-box">
-                        <div class="user-data-in">
-                            <p>Tempo de estudo</p>
+                    <div class="item">
+                        <div class="item-img">
+                            <img src="https://img-c.udemycdn.com/course/750x422/1465244_ed1a_3.jpg">
+                        </div>
+                        <div class="item-info">
+                            <p class="item-title">Curso de programação</p>
+                            <div class="item-rate"></div>
+                            <div class="progress-bar" style="--progress: 70%"></div>
+                            <p class="progress-text">70% concluído</p>
                         </div>
                     </div>
-                </section>
-                <section class="courses">
-                    <div class="title-courses">
-                        <p>Cursos em andamento</p>
-                    </div>
-                    <div class="sec-courses">
-                        
-                        <div class="item">
-                            <div class="item-img">
-                                <img src="https://img-c.udemycdn.com/course/750x422/1465244_ed1a_3.jpg">
-                            </div>
-                            <div class="item-info">
-                                <p class="item-title">Curso de programação</p>
-                                <div class="item-rate"></div>
-                                <div class="progress-bar" style="--progress: 70%"></div>
-                                <p class="progress-text">70% concluído</p>
-                            </div>
+                    <div class="item">
+                        <div class="item-img">
+                            <img src="https://img-c.udemycdn.com/course/750x422/1465244_ed1a_3.jpg">
                         </div>
-                        <div class="item">
-                            <div class="item-img">
-                                <img src="https://img-c.udemycdn.com/course/750x422/1465244_ed1a_3.jpg">
-                            </div>
-                            <div class="item-info">
-                                <p class="item-title">Curso de programação</p>
-                                <div class="item-rate"></div>
-                                <div class="progress-bar" style="--progress: 30%"></div>
-                                <p class="progress-text">30% concluído</p>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="item-img">
-                                <img src="https://img-c.udemycdn.com/course/750x422/1465244_ed1a_3.jpg">
-                            </div>
-                            <div class="item-info">
-                                <p class="item-title">Curso de programação</p>
-                                <div class="item-rate"></div>
-                                <div class="progress-bar" style="--progress: 70%"></div>
-                                <p class="progress-text">70% concluído</p>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="item-img">
-                                <img src="https://img-c.udemycdn.com/course/750x422/1465244_ed1a_3.jpg">
-                            </div>
-                            <div class="item-info">
-                                <p class="item-title">Curso de programação</p>
-                                <div class="item-rate"></div>
-                                <div class="progress-bar" style="--progress: 70%"></div>
-                                <p class="progress-text">70% concluído</p>
-                            </div>
+                        <div class="item-info">
+                            <p class="item-title">Curso de programação</p>
+                            <div class="item-rate"></div>
+                            <div class="progress-bar" style="--progress: 70%"></div>
+                            <p class="progress-text">70% concluído</p>
                         </div>
                     </div>
-                </section>
-            </div>
+                </div>
+            </section>
         </div>
     </div>
 
 
 
     <script>
-        fetch("imgs/title-effect.svg")
-        .then(e=>e.text())
-        .then(e=>{
-            let titles = document.querySelectorAll(".title-courses")
-
-            for(i of titles){
-                i.innerHTML += e
-            }
-        })
         fetch("imgs/star.svg")
         .then(e=>e.text())
         .then(e=>{
