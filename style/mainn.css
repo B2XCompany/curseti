@@ -133,7 +133,7 @@
 }
 
 .title-courses-bt {
-    font-size: 1.1rem;
+    font-size: 0.9rem;
     color: #656565;
     position: relative;
 }
@@ -143,6 +143,10 @@
     right: 0;
     top: 50%;
     transform: translate(-110%, -50%);
+}
+
+.title-courses-bt:hover:after {
+    transform: rotate(90deg);
 }
 
 .title-courses p {
