@@ -123,6 +123,7 @@
     position: relative;
     display: flex;
     flex-direction: row;
+    align-items: center;
     gap: 15px;
     width: 100%;
 }
@@ -138,10 +139,10 @@
 }
 
 .title-courses-bt:after {
-    content: "a";
+    content: "→";
     right: 0;
     top: 50%;
-    transform: translate(-100%, -50%);
+    transform: translate(-110%, -50%);
 }
 
 .title-courses p {
