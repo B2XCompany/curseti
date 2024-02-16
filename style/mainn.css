@@ -140,9 +140,8 @@
 
 .title-courses-bt:after {
     content: "→";
-    right: 0;
-    top: 50%;
     transform: translate(-110%, -50%);
+    display: inline-block;
 }
 
 .title-courses-bt:hover:after {
