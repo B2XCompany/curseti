@@ -147,7 +147,11 @@
     display: flex;
     flex-direction: column;
     gap: 10px;
-    width: calc(100% / 4 - 15px);
+    width: calc(100% / 4 - 35px);
+    padding: 10px;
+    border-radius: 5px;
+    transition: all .3s;
+    cursor: pointer;
 }
 
 .item-img {
@@ -221,12 +225,6 @@
     fill:var(--estrela-color);
 }
 
-.item{
-    width: 35px;
-    padding: 10px;
-    border-radius: 5px;
-    transition: all .3s;
-}
 
 .item:hover {
  background: #fff;
