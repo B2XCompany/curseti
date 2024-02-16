@@ -38,12 +38,10 @@ if(!$passwordV){
     endCode("Senha incorreta", false);
 }
 
-$password = password_hash($password, PASSWORD_DEFAULT);
-
-mysqli_query($__CONEXAO__, "update users set lastModify='$__TIME__', password='$password' where email='$checkEmail'");
+mysqli_query($__CONEXAO__, "update users set lastModify='$__TIME__' where email='$checkEmail'");
 
 $_SESSION['email'] = $checkEmail;
-$_SESSION['password'] = $password;
+$_SESSION['password'] = $passUser;
 
 endCode("Sucesso!", true);
 
