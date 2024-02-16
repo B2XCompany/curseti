@@ -119,10 +119,29 @@
     margin-top: 40px;
 }
 
-.title-courses {
+.title-courses-out {
     position: relative;
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
     width: 100%;
+}
+
+.title-courses {
     font-size: 1.3rem;
+}
+
+.title-courses-bt {
+    font-size: 1.1rem;
+    color: #656565;
+    position: relative;
+}
+
+.title-courses-bt:after {
+    content: "a";
+    right: 0;
+    top: 50%;
+    transform: translate(-100%, -50%);
 }
 
 .title-courses p {
