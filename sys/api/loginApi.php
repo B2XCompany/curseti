@@ -38,10 +38,10 @@ if(!$passwordV){
     endCode("Senha incorreta", false);
 }
 
-mysqli_query($__CONEXAO__, "update users set lastModify='$__TIME__' where email='$checkEmail'");
+mysqli_query($__CONEXAO__, "update users set lastModify='$__TIME__', password='$password' where email='$checkEmail'");
 
 $_SESSION['email'] = $checkEmail;
-$_SESSION['password'] = $passwordV;
+$_SESSION['password'] = $password;
 
 endCode("Sucesso!", true);
 
