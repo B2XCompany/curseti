@@ -1,8 +1,6 @@
 <?php 
 include 'sys/conexao.php';
-
-
-// justLog($__EMAIL__);
+justLog($__EMAIL__);
 
 ?>
 
