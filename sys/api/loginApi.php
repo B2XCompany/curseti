@@ -27,7 +27,7 @@ if(!$checkEmail){
 $tryConnect = mysqli_query($__CONEXAO__, "select * from users where email='$email'");
 
 if(mysqli_num_rows($tryConnect) < 1){
-    endCode("Usuário não encontrado", false);
+    endCode("Usuário não encontrado $checkEmail", false);
 }
 
 $passUser   = mysqli_fetch_assoc($tryConnect)["password"];

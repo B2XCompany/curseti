@@ -220,3 +220,15 @@
 .fill-star {
     fill:var(--estrela-color);
 }
+
+.item{
+    width: 35px;
+    padding: 10px;
+    border-radius: 5px;
+    transition: all .3s;
+}
+
+.item:hover {
+ background: #fff;
+ box-shadow: #ebebeb 0px 0px 20px 0px;
+}
