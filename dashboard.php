@@ -1,8 +1,6 @@
 <?php 
 include 'sys/conexao.php';
-
-
-// justLog($__EMAIL__);
+justLog($__EMAIL__);
 
 ?>
 
@@ -71,7 +69,7 @@ include 'sys/conexao.php';
             color: #C0C0C0;
             font-size: 0.8rem;
         }
-        .title-courses p{
+        .title-courses {
             margin: 0;
         }
         .progress-bar {
@@ -103,8 +101,8 @@ include 'sys/conexao.php';
         <div class="right">
 
             <section id="userData">
-                <div class="title-courses">
-                    <p>Sobre seu perfil</p>
+                <div class="title-courses-out">
+                    <p class="title-courses">Sobre seu perfil</p>
                 </div>
                 <div class="user-data">
                     <div class="user-data-box">
@@ -129,8 +127,9 @@ include 'sys/conexao.php';
                 </div>
             </section>
             <section class="courses">
-                <div class="title-courses">
-                    <p>Cursos em andamento</p>
+            <div class="title-courses-out">
+                    <p class="title-courses">Cursos em andamento</p>
+                    <p class="title-courses-bt">Ver mais</p>
                 </div>
                 <div class="sec-courses">
                     
@@ -182,8 +181,9 @@ include 'sys/conexao.php';
             </section>
 
             <section class="courses">
-                <div class="title-courses">
-                    <p>Cursos completos</p>
+            <div class="title-courses-out">
+                    <p class="title-courses">Cursos concluídos</p>
+                    <p class="title-courses-bt">Ver mais</p>
                 </div>
                 <div class="sec-courses">
                     
