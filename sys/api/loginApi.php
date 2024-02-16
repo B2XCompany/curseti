@@ -8,8 +8,8 @@ header('Content-Type: application/json; charset=utf-8');
 $request = file_get_contents('php://input');
 $json = json_decode($request);
 
-$email = $json->email;
-$password = $json->password;
+$email      = $json->email;
+$password   = $json->password;
 
 $email      = mysqli_real_escape_string($__CONEXAO__, $email);
 $password   = mysqli_real_escape_string($__CONEXAO__, $password);
@@ -24,10 +24,10 @@ if(!$checkEmail){
     endCode("Email inválido", false);
 }
 
-$tryConnect = mysqli_query($__CONEXAO__, "select * from users where email='$email'");
+$tryConnect = mysqli_query($__CONEXAO__, "select * from users where email='$checkEmail'");
 
 if(mysqli_num_rows($tryConnect) < 1){
-    endCode("Usuário não encontrado", false);
+    endCode("Usuário não encontrado $checkEmail", false);
 }
 
 $passUser   = mysqli_fetch_assoc($tryConnect)["password"];
@@ -38,9 +38,9 @@ if(!$passwordV){
     endCode("Senha incorreta", false);
 }
 
-mysqli_query($__CONEXAO__, "update users set lastModify='$__TIME__' where email='$email'");
+mysqli_query($__CONEXAO__, "update users set lastModify='$__TIME__' where email='$checkEmail'");
 
-$_SESSION['email'] = $email;
+$_SESSION['email'] = $checkEmail;
 $_SESSION['password'] = $passUser;
 
 endCode("Sucesso!", true);

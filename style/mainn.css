@@ -119,10 +119,24 @@
     margin-top: 40px;
 }
 
-.title-courses {
+.title-courses-out {
     position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
     width: 100%;
+}
+
+.title-courses {
     font-size: 1.3rem;
+}
+
+.title-courses-bt {
+    font-size: 0.9rem;
+    color: var(--contraste);
+    position: relative;
+    cursor: pointer;
 }
 
 .title-courses p {
@@ -147,7 +161,11 @@
     display: flex;
     flex-direction: column;
     gap: 10px;
-    width: calc(100% / 4 - 15px);
+    width: calc(100% / 4 - 35px);
+    padding: 10px;
+    border-radius: 5px;
+    transition: all .3s;
+    cursor: pointer;
 }
 
 .item-img {
@@ -219,4 +237,10 @@
 
 .fill-star {
     fill:var(--estrela-color);
+}
+
+
+.item:hover {
+ background: #fff;
+ box-shadow: #ebebeb 0px 0px 20px 0px;
 }
