@@ -30,16 +30,16 @@ justLog($__EMAIL__);
         }
         .right{
             width: 100%;
+            overflow-y: scroll;
+            overflow-x: hidden;
+            padding-bottom: 100px;
         }
         .right2 {
             width: 100%;
             background: #f5f5f5;
             display: flex;
-            overflow-y: scroll;
             flex-direction: column;
-            overflow-x: hidden;
             align-items: center;
-            padding-bottom: 100px;
         }
         .user-data {
             width: 100%;
